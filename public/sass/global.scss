@@ -1,7 +1,7 @@
 @use "config/config";
 
 body {
-    height: 295vh;
+    height: 95vh;
     width: 100vh;
     background-color: config.get-color("white"); 
 }
