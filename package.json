@@ -1,0 +1,24 @@
+{
+  "name": "rocambolesque",
+  "version": "1.0.0",
+  "description": "A web project for Rocambolesque Restaurant.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w public/sass:public/css",
+    "minify": "sass -w public/sass:public/css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yulkazs/rocambolesque.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yulkazs/rocambolesque/issues"
+  },
+  "homepage": "https://github.com/Yulkazs/rocambolesque#readme",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
