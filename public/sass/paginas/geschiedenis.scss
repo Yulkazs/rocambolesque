@@ -59,6 +59,7 @@ body {
       max-width: 1000px;
       position: relative;
       margin: -900px auto 0; 
+      z-index: 3;
     }
     
     /* Hide the images by default */
@@ -239,7 +240,7 @@ body {
     }
 
     /* Style for smaller screens (e.g., mobile phones) */
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 888px) {
       .banner img {
         width: 100%;
         height: auto;
@@ -256,7 +257,7 @@ body {
     
       .container h1 {
         font-size: 36px; /* Adjust the font size as needed for larger screens */
-        margin-top: -20px; /* Add some top margin to separate it from other content */
+        margin-top: -40px; /* Add some top margin to separate it from other content */
       }
 
       .container1 {
@@ -265,12 +266,14 @@ body {
       }
 
       .container1 p {
-        font-size: 20px;
+        font-size: 14px;
+        background-color: bisque;
       }
 
       .slideshow-container {
         max-width: 800px;
         margin: 0 auto;
+        margin-top: -250px; /* Adjust this value as needed */
         overflow: hidden;
         position: relative;
         height: 100%;
@@ -282,15 +285,21 @@ body {
 
       .image-container img {
         max-width: 100%;
+        margin-bottom: -450px;
       }
 
       .text1 {
         text-align: center;
+        
+        p {
+          margin-bottom: -900px;
+        }
       }
+
     }
 
     /* Style for larger screens (e.g., tablets and desktops) */
-    @media only screen and (min-width: 601px) {
+    @media only screen and (min-width: 889px) {
       .banner img {
         width: 100%;
         height: auto;
@@ -299,6 +308,8 @@ body {
       .wrapper, .wrapper1 {
         padding: 40px;
         text-align: left;
+        position: relative;
+        z-index: 2;
       }
 
       .container {
@@ -307,7 +318,7 @@ body {
     
       .container h1 {
         font-size: 36px; /* Adjust the font size as needed for larger screens */
-        margin-top: -20px; /* Add some top margin to separate it from other content */
+        margin-top: -50px; /* Add some top margin to separate it from other content */
       }
 
       .container1 {
@@ -316,12 +327,14 @@ body {
       }
 
       .container1 p {
-        font-size: 20px;
+        font-size: 18px;
+        background-color: bisque;
       }
 
       .slideshow-container {
         max-width: 800px;
         margin: 0 auto;
+        margin-top: 10px; /* Adjust this value as needed */
         overflow: hidden;
         position: relative;
         height: 100%;
@@ -338,6 +351,7 @@ body {
 
       .text1 {
         text-align: left;
+        margin-bottom: -300px;
       }
     }
     

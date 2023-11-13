@@ -58,6 +58,7 @@ body .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: -900px auto 0;
+  z-index: 3;
 }
 body .mySlides {
   display: none;
@@ -191,7 +192,7 @@ body p {
   padding: 10px 0; /* Add padding to control the height */
   font-family: "Poppins", sans-serif;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 888px) {
   body .banner img {
     width: 100%;
     height: auto;
@@ -205,18 +206,20 @@ body p {
   }
   body .container h1 {
     font-size: 36px; /* Adjust the font size as needed for larger screens */
-    margin-top: -20px; /* Add some top margin to separate it from other content */
+    margin-top: -40px; /* Add some top margin to separate it from other content */
   }
   body .container1 {
     max-width: 800px;
     margin: 0 auto;
   }
   body .container1 p {
-    font-size: 20px;
+    font-size: 14px;
+    background-color: bisque;
   }
   body .slideshow-container {
     max-width: 800px;
     margin: 0 auto;
+    margin-top: -250px; /* Adjust this value as needed */
     overflow: hidden;
     position: relative;
     height: 100%;
@@ -226,12 +229,16 @@ body p {
   }
   body .image-container img {
     max-width: 100%;
+    margin-bottom: -450px;
   }
   body .text1 {
     text-align: center;
   }
+  body .text1 p {
+    margin-bottom: -900px;
+  }
 }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 889px) {
   body .banner img {
     width: 100%;
     height: auto;
@@ -239,24 +246,28 @@ body p {
   body .wrapper, body .wrapper1 {
     padding: 40px;
     text-align: left;
+    position: relative;
+    z-index: 2;
   }
   body .container {
     text-align: center; /* Center-align the content */
   }
   body .container h1 {
     font-size: 36px; /* Adjust the font size as needed for larger screens */
-    margin-top: -20px; /* Add some top margin to separate it from other content */
+    margin-top: -50px; /* Add some top margin to separate it from other content */
   }
   body .container1 {
     max-width: 800px;
     margin: 0 auto;
   }
   body .container1 p {
-    font-size: 20px;
+    font-size: 18px;
+    background-color: bisque;
   }
   body .slideshow-container {
     max-width: 800px;
     margin: 0 auto;
+    margin-top: 10px; /* Adjust this value as needed */
     overflow: hidden;
     position: relative;
     height: 100%;
@@ -270,6 +281,7 @@ body p {
   }
   body .text1 {
     text-align: left;
+    margin-bottom: -300px;
   }
 }
 
