@@ -6,8 +6,6 @@
     <title>Rocambolesque ®</title>
 </head>
 <body>
-    <!-- Hier komt de Home pagina -->
-
-    <!-- FEATURE BRANCH NAAM: HOME -->
+   <h1>Hoi</h1>
 </body>
 </html>
