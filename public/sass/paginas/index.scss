@@ -1,0 +1,63 @@
+@use "../config/font";
+@use "../config/config";
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        // height: 45rem;
+        filter: brightness(60%);
+    }
+
+    h1 {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        bottom: 20rem;
+        font-family: "Good Brush";
+        font-size: 5rem;
+        color: white;
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+        z-index: 1;
+        position: absolute;
+        width: 70%;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: "Roboto Slab";
+
+        }
+
+        .menu {
+            border: 2px solid white;
+            border-radius: .5rem;
+            font-size: 24px;
+            padding: .5rem 2rem .5rem 2rem;
+        }
+
+        .reserveren {
+            border-radius: .5rem;
+            font-size: 24px;
+            padding: .6rem 2rem .6rem 2rem;
+            background-color: config.get-color("lbrown");
+        }
+    }
+
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Geniet van Momenten van Gastronomisch Genot bij Rocambolesque | Ontdek Heerlijke Gerechten, Bekroonde Wijnen en Onvergetelijk Dineren.">
-    <link rel="stylesheet" href="public/css/header.css">
+    <link rel="stylesheet" href="/public/css/header.css">
     <!-- <link rel="stylesheet" href="/css/menukaart.css"> -->
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/public/css/paginas/index.css">
@@ -26,7 +26,7 @@
         <nav>
             <div class="img">
                 <p>ٌ</p>
-                <img src="/public/Images/backgrounds/Rocambolesque-logo-DEF.png" alt="logo" id="logo">
+                <img src="/public/Images/logo/Rocambolesque-logo-DEF.png" alt="logo" id="logo">
             </div>
             <ul class="" id="mainmenu">
                 <li><a href="Homepage">Home</a></li>
@@ -42,7 +42,7 @@
             <img src="/public/Images/Icons/burger-menu.svg" alt="menu" id="burger-menu" onclick="toggleMenu()">
 
             <!-- <a class="nav-title" href="Homepage">Rocambolesque</a> -->
-            <img src="/public/Images/backgrounds/Rocambolesque-logo-DEF.png" alt="logo" id="logo-res">
+            <img src="/public/Images/logo/Rocambolesque-logo-DEF.png" alt="logo" id="logo-res">
 
         </nav>
     </header>

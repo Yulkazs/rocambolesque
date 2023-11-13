@@ -1,13 +1,20 @@
 @use "sass:map";
 
 $colors: (
-  /* */
+  "white": #ffffff,
+  "black": #000000,
+  "teal": #3FC2A0,
+  "lbrown": #D99F6C,
+  "mbrown": #A6633C,
+  "dbrown": #40261D,
 );
 
 @function get-color($color: false) {
   @if $color {
     @return map.get($colors, $color);
-  } @else {
+  }
+
+  @else {
     @return $colors;
   }
 }

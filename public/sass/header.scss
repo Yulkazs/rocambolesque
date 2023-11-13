@@ -106,6 +106,7 @@ body {
 
 // nav stylen opnieuw
 .main-head {
+
     display: flex;
     width: 100%;
     justify-content: center;
@@ -114,6 +115,7 @@ body {
     // top: 0;
 
     nav {
+        z-index: 6;
         // min-height: 8rem;
         border-radius: 50px;
         display: flex;
