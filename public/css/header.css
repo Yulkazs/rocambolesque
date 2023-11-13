@@ -1,17 +1,133 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @use "./font.scss";
- *   | ^^^^^^^^^^^^^^^^^^
- *   '
- *   public\sass\header.scss 3:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @use \"./font.scss\";\d\a   \2502  ^^^^^^^^^^^^^^^^^^\a   \2575 \a   public\\sass\\header.scss 3:1  root stylesheet";
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@font-face {
+  src: url(../fonts/Good\ Brush.ttf);
+  font-family: "Good Brush";
 }
+*,
+*::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.main-head {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.main-head nav {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  width: 90%;
+  top: 2rem;
+  position: fixed;
+  font-family: "Roboto Slab";
+}
+.main-head nav .nav-title {
+  display: none;
+}
+.main-head nav #burger-menu {
+  display: none;
+}
+.main-head nav .img {
+  position: relative;
+}
+.main-head nav .img img {
+  position: absolute;
+  object-fit: cover;
+  height: 8rem;
+  left: 0;
+  transform: translateY(-55%);
+}
+.main-head nav ul {
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+  padding-left: 7rem;
+}
+.main-head nav ul a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+.main-head nav ul li:last-of-type {
+  display: none;
+}
+.main-head nav .btn {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 3rem;
+  border-radius: 50px;
+  border: none;
+}
+.main-head nav .btn a {
+  text-decoration: none;
+  color: white;
+}
+.main-head nav #logo-res {
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  .main-head nav {
+    max-width: 90%;
+    height: 4.5rem;
+    justify-content: center;
+  }
+  .main-head nav .btn {
+    display: none;
+  }
+  .main-head nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    left: 2rem;
+  }
+  .main-head nav ul.active {
+    display: flex;
+  }
+  .main-head nav ul li:last-of-type {
+    display: block;
+  }
+  .main-head nav ul a {
+    display: block;
+    width: 100%;
+  }
+  .main-head nav ul a:hover {
+    background-color: teal;
+  }
+  .main-head nav #logo {
+    display: none;
+  }
+  .main-head nav #burger-menu {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 2.5rem;
+  }
+  .main-head nav #logo-res {
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
