@@ -10,7 +10,7 @@ body {
   /* Fading animation */
   /* Add this CSS to set a fixed width and height for the images */
   /* Style for smaller screens (e.g., mobile phones) */
-  /* Style for larger screens (e.g., tablets and desktops) */
+  /* Style for smaller screens (e.g., mobile phones) */
 }
 body .banner img {
   width: 100.15%;
@@ -44,7 +44,7 @@ body .wrapper1 .container1 {
   width: 80%;
   height: 150%;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 50px;
   line-height: 1.6;
 }
 body .wrapper1 p {
@@ -153,7 +153,7 @@ body .image-container {
   align-items: center;
 }
 body img.demo {
-  max-width: 35%;
+  max-width: 45%;
   /* Adjust the width of the image as needed */
   height: auto;
 }
@@ -165,10 +165,12 @@ body .text1 p {
   line-height: 1.6;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
 }
 body .slide-image {
   width: 100%; /* Set the width to 100% to make the images responsive */
-  height: 700px; /* Set the desired height for all images */
+  height: 700px;
+  margin-top: 300px; /* Set the desired height for all images */
 }
 body footer {
   background-color: #ffffff;
@@ -192,7 +194,52 @@ body p {
   padding: 10px 0; /* Add padding to control the height */
   font-family: "Poppins", sans-serif;
 }
-@media only screen and (max-width: 888px) {
+@media only screen and (max-width: 992px) {
+  body .banner img {
+    width: 100%;
+    height: auto;
+  }
+  body .wrapper, body .wrapper1 {
+    padding: 40px;
+    text-align: left;
+  }
+  body .container {
+    text-align: center;
+  }
+  body .container h1 {
+    font-size: 36px;
+    margin-top: -40px; /* Adjusted margin */
+  }
+  body .container1 {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  body .container1 p {
+    font-size: 20px;
+    background-color: bisque;
+  }
+  body .slideshow-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 1300px; /* Changed to auto for responsive height */
+  }
+  body .image-container {
+    flex-direction: column;
+  }
+  body .image-container img {
+    max-width: 100%;
+    margin-bottom: 20px; /* Adjusted margin */
+  }
+  body .text1 {
+    text-align: center;
+  }
+  body .text1 p {
+    margin-bottom: 20px; /* Adjusted margin */
+  }
+}
+@media screen and (max-width: 768px) {
   body .banner img {
     width: 100%;
     height: auto;
@@ -229,6 +276,55 @@ body p {
   }
   body .image-container img {
     max-width: 100%;
+    margin-top: -300px;
+  }
+  body .text1 {
+    text-align: center;
+  }
+  body .text1 p {
+    margin-bottom: -900px;
+  }
+}
+@media screen and (max-width: 562px) {
+  body .banner img {
+    width: 100%;
+    height: auto;
+  }
+  body .wrapper, body .wrapper1 {
+    padding: 40px;
+    text-align: left;
+  }
+  body .container {
+    text-align: center; /* Center-align the content */
+  }
+  body .container h1 {
+    font-size: 36px; /* Adjust the font size as needed for larger screens */
+    margin-top: -40px; /* Add some top margin to separate it from other content */
+  }
+  body .container1 {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  body .container1 p {
+    font-size: 20px;
+    background-color: bisque;
+    position: relative;
+    z-index: 1;
+    line-height: 0.8;
+  }
+  body .slideshow-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: -250px; /* Adjust this value as needed */
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+  body .image-container {
+    flex-direction: column;
+  }
+  body .image-container img {
+    max-width: 100%;
     margin-bottom: -450px;
   }
   body .text1 {
@@ -238,51 +334,7 @@ body p {
     margin-bottom: -900px;
   }
 }
-@media only screen and (min-width: 889px) {
-  body .banner img {
-    width: 100%;
-    height: auto;
-  }
-  body .wrapper, body .wrapper1 {
-    padding: 40px;
-    text-align: left;
-    position: relative;
-    z-index: 2;
-  }
-  body .container {
-    text-align: center; /* Center-align the content */
-  }
-  body .container h1 {
-    font-size: 36px; /* Adjust the font size as needed for larger screens */
-    margin-top: -50px; /* Add some top margin to separate it from other content */
-  }
-  body .container1 {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  body .container1 p {
-    font-size: 18px;
-    background-color: bisque;
-  }
-  body .slideshow-container {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: 10px; /* Adjust this value as needed */
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-  }
-  body .image-container {
-    display: flex;
-  }
-  body .image-container img {
-    max-width: 50%;
-    margin-right: 20px;
-  }
-  body .text1 {
-    text-align: left;
-    margin-bottom: -300px;
-  }
-}
+
+/* Style for larger screens (e.g., tablets and desktops) */
 
 /*# sourceMappingURL=geschiedenis.css.map */
