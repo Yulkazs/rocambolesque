@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 @font-face {
-  src: url(../config/fonts/Good\ Brush.ttf);
+  src: url(/public/css/fonts/Good\ Brush.ttf);
   font-family: "Good Brush";
 }
 *,
@@ -73,6 +73,7 @@ body {
   border: none;
 }
 .main-head nav .btn a {
+  letter-spacing: 2px;
   text-decoration: none;
   color: white;
 }
