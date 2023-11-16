@@ -26,4 +26,7 @@
     <!-- FEATURE BRANCH NAAM: HOME -->
 </body>
 
+</head>
+<body>
+</body>
 </html>
