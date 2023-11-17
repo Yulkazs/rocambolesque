@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 @font-face {
-  src: url(../fonts/Good\ Brush.ttf);
+  src: url(/public/css/fonts/Good\ Brush.ttf);
   font-family: "Good Brush";
 }
 *,
@@ -21,11 +21,13 @@ body {
   justify-content: center;
 }
 .main-head nav {
+  z-index: 6;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 2rem;
+  background-color: #000000;
   width: 90%;
   top: 2rem;
   position: fixed;
@@ -66,10 +68,12 @@ body {
   color: white;
   text-decoration: none;
   padding: 0.5rem 3rem;
+  background-color: #3FC2A0;
   border-radius: 50px;
   border: none;
 }
 .main-head nav .btn a {
+  letter-spacing: 2px;
   text-decoration: none;
   color: white;
 }

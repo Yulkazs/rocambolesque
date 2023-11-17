@@ -22,8 +22,18 @@
     $this->utils('header', $data);
 
     ?>
-    <!-- Hier komt de Home pagina -->
-    <!-- FEATURE BRANCH NAAM: HOME -->
+    <section class="banner">
+        <img src="/public/Images/backgrounds/bg-home.png" alt="backgroundIMG">
+        <h1>Verken Wereldse Smaken</h1>
+        <div class="buttons">
+            <div class="menu">
+                <a href="menu">MENU</a>
+            </div>
+            <div class="reserveren">
+                <a href="reserveren">RESERVEREN</a>
+            </div>
+        </div>
+    </section>
 </body>
 
 </head>
