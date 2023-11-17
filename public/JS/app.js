@@ -1,2 +1,5 @@
-<script>alert('Hoi');</script>
-// This is for the commit
+const menuButton = document.querySelector("#mainmenu");
+
+function toggleMenu() {
+    menuButton.classList.toggle('active');
+}
