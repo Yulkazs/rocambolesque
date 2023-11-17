@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../public/css/menu.css">
+    <link rel="stylesheet" href="../public/css/header.css">
     <title>Rocambolesque ®</title>
 </head>
 <body>
+
     <div class="item-1-background">
         <img src="../Images/backgrounds/bg-menu.png" alt="Background Image">
     </div>
@@ -42,5 +44,18 @@
 
 
     <script src="../../public/JS/animation.js"></script>
+    <?php
+    $tags = [
+        '<link rel="stylesheet" href="/public/css/index.css">',
+    ];
+    $data = [
+        'tags' => $tags,
+        'nav' => true
+    ];
+
+
+    $this->utils('header', $data);
+
+    ?>
 </body>
 </html>
