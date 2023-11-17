@@ -26,50 +26,44 @@
     </div>
     <!--  Pagina Titel -->
     <h2 class="title">Contact Ons</h2>
-    <!--  Informatie bar -->
-    <div class="container">
-        <div class="info-container">
-            <h1 id="Title">Info</h1>
-            <p id="Desc">
-                Heeft u een specifieke vraag of wilt u meer informatie ontvangen? Vul dan het onderstaande contactformulier in. We zullen zo snel mogelijk contact met u opnemen.
-                <br>
-                <br>
-                Bij Rocambolesque streven we ernaar om u de best mogelijke service te bieden. We kijken uit naar uw bericht en hopen u binnenkort te mogen verwelkomen als een gewaardeerde klant of partner.
-                <br>
-                <br>
-                Bedankt voor uw interesse in Rocambolesque!
-            </p>
-            <div class="info-buttons">
-                <i class="fa-solid fa-phone"></i>
-                <span>+1 800 123 4567</span>
-                <br>
-                <i class="fa-solid fa-location-arrow"></i>
-                <span>Reestraat 8  1016DN Amsterdam</span>
-                <span>Australiëlaan 12345 EC  - Amsterdam, Nederland</span>
-            </div>
-        </div>
+        <div id="map"></div>
 
-        <!--  Contact Formulier -->
-        <form class="formulier">
-            <p class="contacted">Bedankt voor uw bericht! <br> We nemen zo snel mogelijk contact met u op.</p>
-            <div class="field">
-                <label>Naam</label>
-                <input type="text" name="name" id="name" placeholder="Voor & achternaam">
-            </div>
-            <div class="field">
-                <label>Onderwerp</label>
-                <input type="text" name="subject" id="subject" placeholder="Onderwerp van uw bericht!">
-            </div>
-            <div class="field">
-                <label for="message">Bericht</label>
-                <input type="text" name="message" id="message" placeholder="Uw bericht hier...">
-            </div>
-            <div class="field">
-                <label for="from_name">E-mail</label>
-                <input type="text" name="from_name" id="from_name" placeholder="Uw mail adress hier">
-            </div>
-            <input type="submit" id="button" value="Verstuur" >
-        </form>
-    </div>
-</body>
-</html>
+<script>
+    function initMap() {
+        // Create the map.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12, //This sets the zoom level of the map. (Larger is closer, smaller is further away)
+          center: {lat: 36.156744, lng: -115.033651},
+          mapTypeId: 'terrain' //You can change this to ROADMAP, HYBRID, etc...
+        });
+
+        
+      
+        // Next, construct the circle for each value in citymap.
+       
+        for (var city in citymap) {
+          // Add the circle properties to the map.
+          var cityCircle = new google.maps.Circle({
+            strokeColor: '#2e6da4', //color of the outer ring
+            strokeOpacity: 0.8,  //transparency of the outer ring
+            strokeWeight: 2,  //thickness of the outer ring
+            fillColor: '#337ab7', //fill color of the circle
+            fillOpacity: 0.25,  //transparancy of the circle
+            map: map,
+            center: citymap[city].center,
+            radius: 4680 //You can also use a math function or chart reference here to determine the diameter of the circle.
+                          //Eample: Math.sqrt(citymap[city].population) * 4    
+          });
+        }
+      }
+      
+       // Finally, create an object containing Lat-Lng of the location 
+      // you want to center on.
+       var citymap = {
+        lasvegas: {
+          center: {lat: 36.156744, lng: -115.033651},
+          population: 2714856 //this is optional to use a math formula to set the diameter of the circle (as mentioned above)
+        },
+ 
+      };
+</script>
