@@ -57,7 +57,7 @@ body * {
 body .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: -900px auto 0;
+  margin: -600px auto 0;
   z-index: 3;
 }
 body .mySlides {
@@ -146,7 +146,7 @@ body .image {
 }
 body .image p {
   background-color: bisque;
-  padding: 140px;
+  padding: 130px;
 }
 body .image-container {
   display: flex;
@@ -331,7 +331,7 @@ body p {
     text-align: center;
   }
   body .text1 p {
-    margin-bottom: -900px;
+    margin-bottom: -800px;
   }
 }
 
