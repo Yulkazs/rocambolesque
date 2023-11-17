@@ -21,6 +21,11 @@ class database
             echo $e->getMessage();
         }
     }
+    
+    public function bind($parameter, $value)
+    {
+        $this->statement->bindValue($parameter, $value);
+    }
 
     public function query($sql)
     {
