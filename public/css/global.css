@@ -1,6 +1,5 @@
 body {
-  height: 95vh;
-  width: 100vh;
+  background-color: #ffffff;
 }
 
 ::-webkit-scrollbar {
@@ -8,6 +7,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
+  background-color: #3FC2A0;
   border-radius: 0.5rem;
 }
 
@@ -18,6 +18,10 @@ body {
 ::-webkit-scrollbar-button {
   display: none;
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=global.css.map */
