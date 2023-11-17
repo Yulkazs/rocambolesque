@@ -1,6 +1,12 @@
 body {
+<<<<<<< HEAD
   height: 95vh;
   width: 100vh;
+=======
+  margin-left: 0rem;
+  margin-right: 0rem;
+  background-color: #ffffff;
+>>>>>>> 5f909a7c39aa409f282d6664ae942ff37502f28e
 }
 
 ::-webkit-scrollbar {
@@ -8,6 +14,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
+<<<<<<< HEAD
+=======
+  background-color: #3FC2A0;
+>>>>>>> 5f909a7c39aa409f282d6664ae942ff37502f28e
   border-radius: 0.5rem;
 }
 
@@ -20,4 +30,11 @@ body {
   scroll-behavior: smooth;
 }
 
+<<<<<<< HEAD
+=======
+::-webkit-scrollbar-corner {
+  background-color: #ffffff;
+}
+
+>>>>>>> 5f909a7c39aa409f282d6664ae942ff37502f28e
 /*# sourceMappingURL=global.css.map */

@@ -1,0 +1,129 @@
+body .banner {
+  display: flex;
+  justify-content: center;
+}
+body .banner img {
+  align-items: center;
+  width: 100%;
+  margin-top: -20%;
+  margin-bottom: 5%;
+}
+body .title {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 5%;
+  margin-top: -10%;
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: uppercase;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Roboto Slab", sans-serif;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+body .container .info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 30px 0px 0px 30px;
+  border: 2px solid #40261D;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(170deg, rgb(2, 0, 36) 1%, rgb(166, 99, 60) 110%);
+  padding: 2rem;
+  width: 25%;
+  height: 70vh;
+  margin-top: -1rem;
+}
+body .container .info-container #Title {
+  text-transform: uppercase;
+  margin-top: -1rem;
+}
+body .container .info-container #Desc {
+  margin-top: 5%;
+  font-size: 20px;
+  font-weight: lighter;
+}
+body .container .info-container .info-buttons {
+  margin-top: 25%;
+  font-size: 20px;
+}
+body .container .info-container .info-buttons span {
+  margin-left: 5%;
+}
+body .container .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25%;
+  height: 70vh;
+  padding: 2rem;
+  border-radius: 0px 30px 30px 0px;
+  border: 2px solid #40261D;
+  margin-top: -0.8%;
+}
+body .container .form-container .contacted {
+  display: none;
+  text-align: center;
+  background-color: #75fa99;
+  border: 2px solid #3ede69;
+  border-radius: 10px;
+  margin: -2% 2% 10%;
+  padding: 1rem;
+  width: 90%;
+  font-weight: 500;
+  font-size: 19px;
+}
+body .container .form-container label {
+  font-size: 25px;
+}
+body .container .form-container input {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5px;
+  font-size: 18px;
+  font-family: "Roboto Slab", sans-serif;
+  margin-left: -0.2%;
+  margin-top: 0.5%;
+  margin-bottom: 10%;
+  max-width: 50%;
+  max-height: 10%;
+}
+body .container .form-container input:focus {
+  outline: none;
+  border: 1.5px solid #40261D;
+}
+body .container .form-container #content {
+  max-width: 40%;
+  max-height: 1%;
+  min-width: 5rem;
+  min-height: 5rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 18px;
+  border: none;
+}
+body .container .form-container #content:focus {
+  outline: none;
+  border: 1.5px solid #40261D;
+}
+body .container .form-container .btn-submit {
+  border: none;
+  border-radius: 40px;
+  background-color: #3FC2A0;
+  color: #ffffff;
+  font-size: 20px;
+  height: 3rem;
+  margin-top: 10%;
+}
+
+/*# sourceMappingURL=contact.css.map */
