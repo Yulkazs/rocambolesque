@@ -9,6 +9,7 @@ $colors: (
   "dbrown": #40261D,
 );
 
+// Function to get color from map
 @function get-color($color: false) {
   @if $color {
     @return map.get($colors, $color);
