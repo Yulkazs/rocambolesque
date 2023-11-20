@@ -100,5 +100,6 @@
   }
 
   // Add JavaScript for responsive navigation if needed.
+  
 </script>
 
