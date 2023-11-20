@@ -21,10 +21,7 @@ class Database
         $this->statement = $this->dbHandler->prepare($sql);
     }
 
-    public function bind($parameter, $value)
-    {
-        $this->statement->bindValue($parameter, $value);
-    }
+   
 
 
     public function execute()
