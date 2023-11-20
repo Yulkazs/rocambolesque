@@ -125,7 +125,8 @@ body {
         background-color: config.get-color("black");
         width: 90%;
         top: 2rem;
-        position: fixed;
+        position: absolute;
+        top: 8%;
         // width: 100%;
 
         font-family: "Roboto Slab";
@@ -184,7 +185,7 @@ body {
         .btn {
             color: white;
             text-decoration: none;
-            padding: 0.5rem 3rem;
+            padding: 1.0rem 3rem;
             background-color: config.get-color("teal");
             border-radius: 50px;
             border: none;
