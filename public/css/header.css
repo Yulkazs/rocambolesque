@@ -60,12 +60,10 @@ body {
   display: none;
 }
 .main-head nav .btn {
-  color: white;
   text-decoration: none;
-  padding: 1rem 3rem;
+  padding: 0.5rem 3rem;
   background-color: #3FC2A0;
   border-radius: 50px;
-  border: none;
 }
 .main-head nav .btn a {
   letter-spacing: 2px;
