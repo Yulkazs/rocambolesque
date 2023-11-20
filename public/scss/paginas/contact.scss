@@ -1,0 +1,32 @@
+@use "../config/config";
+
+body {
+    .banner {
+        display: flex;
+        justify-content: center;
+        img {
+            align-items: center;
+            width: 100%;
+            margin-top: -20%;
+            margin-bottom: 5%;
+        }
+    }
+    .title {
+        display: flex;
+        justify-content: center;
+        color: config.get-color("white");
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 5%;
+        margin-top: -10%;
+        text-shadow: 2px 2px 4px #000000;
+        text-transform: uppercase;
+    }
+
+    #map {
+        height: 100%;
+        width: 80%;
+        margin-left: 10px;
+    }
+}
