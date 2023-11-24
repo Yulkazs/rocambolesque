@@ -1,0 +1,130 @@
+*,
+*::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.main-head {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.main-head nav {
+  z-index: 6;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  background-color: #000000;
+  width: 90%;
+  position: absolute;
+  top: 8%;
+  font-family: "Roboto Slab";
+}
+.main-head nav .nav-title {
+  display: none;
+}
+.main-head nav #burger-menu {
+  display: none;
+}
+.main-head nav .img {
+  position: relative;
+}
+.main-head nav .img img {
+  position: absolute;
+  object-fit: cover;
+  height: 8rem;
+  left: 0;
+  transform: translateY(-55%);
+}
+.main-head nav ul {
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+  padding-left: 7rem;
+}
+.main-head nav ul a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+.main-head nav ul li:last-of-type {
+  display: none;
+}
+.main-head nav .btn {
+  text-decoration: none;
+  padding: 0.5rem 3rem;
+  background-color: #3FC2A0;
+  border-radius: 50px;
+}
+.main-head nav .btn a {
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: white;
+}
+.main-head nav #logo-res {
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  .main-head nav {
+    max-width: 90%;
+    height: 4.5rem;
+    justify-content: center;
+  }
+  .main-head nav .btn {
+    display: none;
+  }
+  .main-head nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+    left: 2rem;
+  }
+  .main-head nav ul.active {
+    display: flex;
+  }
+  .main-head nav ul li:last-of-type {
+    display: block;
+  }
+  .main-head nav ul a {
+    display: block;
+    width: 100%;
+  }
+  .main-head nav ul a:hover {
+    background-color: teal;
+  }
+  .main-head nav #logo {
+    display: none;
+  }
+  .main-head nav #burger-menu {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 2.5rem;
+  }
+  .main-head nav #logo-res {
+    display: flex;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
