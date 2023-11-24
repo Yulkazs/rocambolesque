@@ -1,32 +1,112 @@
 @use "../config/config";
 
 body {
-    .banner {
-        display: flex;
-        justify-content: center;
-        img {
-            align-items: center;
-            width: 100%;
+    width: 99%;
+    height: 92vh;
+    .bannerContact {
+        .banner-img {
+            width: 102%;
+            height: 100%;
             margin-top: -20%;
-            margin-bottom: 5%;
+            margin-left: -1%;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            font-family: "Roboto Slab", serif;
+            color: config.get-color('white');
+            text-align: center;
+            margin-top: -5%;
+            text-transform: uppercase;
+            text-shadow: 0.5rem 0.5rem 0.5rem black;
         }
     }
-    .title {
-        display: flex;
-        justify-content: center;
-        color: config.get-color("white");
-        font-family: 'Roboto Slab', sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-        margin-bottom: 5%;
-        margin-top: -10%;
-        text-shadow: 2px 2px 4px #000000;
-        text-transform: uppercase;
+    .text {
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Roboto Slab", serif;
+        color: config.get-color('black');
     }
-
-    #map {
-        height: 100%;
-        width: 80%;
-        margin-left: 10px;
+    .contact-container {
+        .title {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-family: "Roboto Slab", serif;
+            color: config.get-color('black');
+        }
+        .adress {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: "Roboto Slab", serif;
+            color: config.get-color('black');
+        }
+        .mail-us {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: "Roboto Slab", serif;
+            color: config.get-color('black');
+            input {
+                width: 50%;
+                height: 3rem;
+                border: 1px solid config.get-color('black');
+                border-radius: 0.5rem;
+                margin-top: 2%;
+                margin-left: 25%;
+                margin-right: 25%;
+                text-align: center;
+                font-size: 1.5rem;
+                font-family: "Roboto Slab", serif;
+                color: config.get-color('black');
+                z-index: 1;
+            }
+            button {
+                border: none;
+                background-color: config.get-color('teal');
+                padding: 10px;
+                border-radius: 1.5rem;
+                position: relative;
+                margin-top: -2.9%;
+                margin-left: 46%;
+                cursor: pointer;
+                i {
+                    font-size: 1.2rem;
+                    color: config.get-color('white');
+                }
+            }
+        }
+    }
+    .row {
+        .title {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-family: "Roboto Slab", serif;
+            color: config.get-color('black');
+        }
+        #map {
+            margin-top: 2%;
+            height: 500px;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10%;
+        }
     }
 }
