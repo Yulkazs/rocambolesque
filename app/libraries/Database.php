@@ -18,6 +18,12 @@ class Database
         $this->statement = $this->dbHandler->prepare($sql);
     }
 
+<<<<<<< HEAD
+=======
+   
+
+
+>>>>>>> c08199fbca4e3ac4c1b28ff8220903ddf993a145
     public function execute()
     {
         $this->statement->execute();

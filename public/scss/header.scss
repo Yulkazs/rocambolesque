@@ -1,6 +1,6 @@
 @use "./config/config";
 // @use "./config/screen";
-@use "./config/_font.scss";
+// @use "./config/_font.scss";
 
 
 *,
@@ -124,7 +124,6 @@ body {
         padding: 0.5rem 2rem;
         background-color: config.get-color("black");
         width: 90%;
-        top: 2rem;
         position: absolute;
         top: 8%;
         // width: 100%;
@@ -183,12 +182,10 @@ body {
         }
 
         .btn {
-            color: white;
             text-decoration: none;
-            padding: 1.0rem 3rem;
+            padding: 0.5rem 3rem;
             background-color: config.get-color("teal");
             border-radius: 50px;
-            border: none;
 
 
             a {
