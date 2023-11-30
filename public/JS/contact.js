@@ -1,26 +1,68 @@
-let button = document.getElementById("submit");
+var map;
 
-button.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent the form from submitting (page reload)
-});
+function initMap() {
 
-function validateForm() {
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
+    // Create map
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 44.0488119, lng: 4.655595},
+        zoom: 3
+    });
 
-    if (name == "") {
-        alert("Name must be filled out");
-        return false;
-    }
-    if (email == "") {
-        alert("Email must be filled out");
-        return false;
-    }
-    if (message == "") {
-        alert("Message must be filled out");
-        return false;
-    }
-    alert("Form submitted successfully");
-    return true;
+    // Reset the value of the search box
+    document.getElementById('search').value = '';
+
+    var input = document.getElementById('search');
+
+    // Create new searchbox constructor
+    var searchName = new google.maps.places.SearchBox(input);
+
+    // Set search to stay within bounds first
+    map.addListener('bounds_changed', function() {
+        searchName.setBounds(map.getBounds());
+    })
+
+    // Array to hold search options
+    var markers = [];
+
+    // When user selects prediction from list
+    searchName.addListener('places_changed', function() {
+        
+        // Var to get places
+        var places = searchName.getPlaces();
+
+        // If no places then just return (do nothing)
+        if (places.length === 0) {
+            return;
+        }
+
+        // Clear previous markers
+        markers.forEach(function (m) { m.setMap(null); });
+
+        // Reset markers array
+        markers = [];
+
+        // bounds object
+        var bounds = new google.maps.LatLngBounds();
+
+        places.forEach(function (p) {
+            // If no data then just return (do nothing)
+            if (!p.geometry) {
+                return;
+            }
+
+            // push marker with data
+            markers.push(new google.maps.Marker({
+                map: map,
+                title: p.title,
+                position: p.geometry.location
+            }));
+
+            if (p.geometry.viewport) {
+                bounds.union(p.geometry.viewport);
+            } else {
+                bounds.extend(p.geometry.location);
+            }
+        });
+        map.fitBounds(bounds);
+    });
 }
