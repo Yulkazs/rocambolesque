@@ -1,133 +1,112 @@
 @use "../config/config";
 
 body {
-    .banner {
-        display: flex;
-        justify-content: center;
-        img {
-            align-items: center;
-            width: 100%;
+    width: 99%;
+    height: 92vh;
+    .bannerContact {
+        .banner-img {
+            width: 102%;
+            height: 100%;
             margin-top: -20%;
-            margin-bottom: 5%;
+            margin-left: -1%;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            font-family: "Roboto Slab", serif;
+            color: config.get-color('white');
+            text-align: center;
+            margin-top: -5%;
+            text-transform: uppercase;
+            text-shadow: 0.5rem 0.5rem 0.5rem black;
         }
     }
-    .title {
-        display: flex;
-        justify-content: center;
-        color: config.get-color("white");
-        font-family: 'Roboto Slab', sans-serif;
-        font-size: 40px;
-        font-weight: 600;
-        margin-bottom: 5%;
-        margin-top: -10%;
-        text-shadow: 2px 2px 4px #000000;
-        text-transform: uppercase;
+    .text {
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Roboto Slab", serif;
+        color: config.get-color('black');
     }
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        font-family: 'Roboto Slab', sans-serif;
-        margin-top: 7%;
-        margin-bottom: 7%;
-
-        .info-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            color: config.get-color("white");
-            border-radius: 30px 0px 0px 30px;
-            border: 2px solid config.get-color("dbrown");
-            background: rgb(2,0,36);
-            background: linear-gradient(170deg, rgba(2,0,36,1) 1%, rgba(166,99,60,1) 110%);
-            padding: 2rem;
-            width: 25%;
-            height: 70vh;
-            margin-top: -1rem;
-            #Title {
-                text-transform: uppercase;
-                margin-top: -1rem;
+    .contact-container {
+        .title {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-family: "Roboto Slab", serif;
+            color: config.get-color('black');
+        }
+        .adress {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: "Roboto Slab", serif;
+            color: config.get-color('black');
+        }
+        .mail-us {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: "Roboto Slab", serif;
+            color: config.get-color('black');
+            input {
+                width: 50%;
+                height: 3rem;
+                border: 1px solid config.get-color('black');
+                border-radius: 0.5rem;
+                margin-top: 2%;
+                margin-left: 25%;
+                margin-right: 25%;
+                text-align: center;
+                font-size: 1.5rem;
+                font-family: "Roboto Slab", serif;
+                color: config.get-color('black');
+                z-index: 1;
             }
-            #Desc {
-                margin-top: 5%;
-                font-size: 20px;
-                font-weight: lighter;
-            }
-            .info-buttons {
-                margin-top: 25%;
-                font-size: 20px;
-                span {
-                    margin-left: 5%;
+            button {
+                border: none;
+                background-color: config.get-color('teal');
+                padding: 10px;
+                border-radius: 1.5rem;
+                position: relative;
+                margin-top: -2.9%;
+                margin-left: 46%;
+                cursor: pointer;
+                i {
+                    font-size: 1.2rem;
+                    color: config.get-color('white');
                 }
             }
         }
-        .form-container {
+    }
+    .row {
+        .title {
+            margin-top: 5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-family: "Roboto Slab", serif;
+            color: config.get-color('black');
+        }
+        #map {
+            margin-top: 2%;
+            height: 500px;
+            width: 80%;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 25%;
-            height: 70vh;
-            padding: 2rem;
-            border-radius: 0px 30px 30px 0px;
-            border: 2px solid config.get-color("dbrown");
-            margin-top: -0.8%;
-            .contacted {
-                display: none;
-                text-align: center;
-                background-color: #75fa99;
-                border: 2px solid #3ede69;
-                border-radius: 10px;
-                margin: -2% 2% 10%;
-                padding: 1rem;
-                width: 90%;
-                font-weight: 500;
-                font-size: 19px;
-            }  
-            label {
-                font-size: 25px;
-            }
-            input {
-                width: 80%;
-                height: 30px;
-                border: none;
-                border-radius: 5px;
-                padding: .5px;
-                font-size: 18px;
-                font-family: "Roboto Slab", sans-serif;
-                margin-left: -.2%;
-                margin-top: .5%;
-                margin-bottom: 10%;
-                max-width: 50%;
-                max-height: 10%;
-            }
-            input:focus {
-                outline: none;
-                border: 1.5px solid config.get-color("dbrown");
-            }
-            #content {
-                max-width: 40%;
-                max-height: 1%;
-                min-width: 5rem;
-                min-height: 5rem;
-                font-family: "Roboto Slab", sans-serif;
-                font-size: 18px;
-                border: none;
-            }
-            #content:focus {
-                outline: none;
-                border: 1.5px solid config.get-color("dbrown");
-            }
-
-            .btn-submit {
-                border: none;
-                border-radius: 40px;
-                background-color: config.get-color("teal");
-                color: config.get-color("white");
-                font-size: 20px;
-                height: 3rem;
-                margin-top: 10%;
-            }
+            justify-content: center;
+            align-items: center;
+            margin-left: 10%;
         }
     }
 }

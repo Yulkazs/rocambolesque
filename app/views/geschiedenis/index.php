@@ -7,9 +7,22 @@
     <title>Rocambolesque ® - Geschiedenis</title>
 </head>
     <body id="geschiedenis">
+    <?php
+    $tags = [
+        '<link rel="stylesheet" href="/public/css/index.css">',
+    ];
+    $data = [
+        'tags' => $tags,
+        'nav' => true
+    ];
+
+
+    $this->utils('header', $data);
+
+    ?>
     <div class="wrapper">
       <div class="banner">
-        <img src="../public/IMG/geschiedenis.png">
+        <img src="../public/Images/backgrounds/bg-geschiedenis.png">
       </div>
     </div>  
     </div>
