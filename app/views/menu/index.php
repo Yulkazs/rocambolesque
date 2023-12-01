@@ -37,11 +37,11 @@
         <img class="item14-bg-dinerkaart" src="../Images/backgrounds/bg-dinerkaart.png" alt="">
         <h1 class="item18-dinerkaart-h1">DINERKAART</h1>
         <div class="item16-menukaart-text">Dineren met dierbaren is een avondje uit in Bakboord. Eerst heerlijk genieten van je aperitief en diverse amuses en dan wordt de eerste gang geserveerd samen met een passend glas wijn. Tot de laatste gang en de koffie met friandises wordt je top verzorgt.</div>
-        <div class="item19-menu-link">Menu   →</div>
+        <a href="" class="item19-menu-link">Menu   →</a>
         <img class="item15-bg-wijnkaart" src="../Images/backgrounds/bg-wijnkaart.png" alt="">
         <div class="item19-wijnkaart-h1">WIJNKAART</div>
         <div class="item17-wijnkaart-text">Wijn en spijs in de juiste balans zorgt voor een optimale beleving. Met zorg zijn er mooie wijnen geselecteerd die de verfijnde gerechten aanvullen.  Onze wijnkaart heeft de klassiekers uit de befaamde wijnstreken tot vernieuwende wijnen van onbekende wijnproducenten.</div>
-        <div class="item20-wijn-link">←Wijnkaart</div>
+        <a href="" class="item20-wijn-link">←Wijnkaart</a>
     </div>
 
 

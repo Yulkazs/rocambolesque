@@ -58,4 +58,17 @@
             <button type="submit">Reserveren</button>
         </form>
     </div>
+    <?php
+    $tags = [
+        '<link rel="stylesheet" href="/public/css/index.css">',
+    ];
+    $data = [
+        'tags' => $tags,
+        'nav' => true
+    ];
+
+
+    $this->utils('header', $data);
+
+    ?>
 </body>

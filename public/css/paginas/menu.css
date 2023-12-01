@@ -1276,7 +1276,7 @@ body .item-1-orangestripe {
   .item13-menu-container {
     width: 1000px;
     height: 900px;
-    top: 250%;
+    top: 300%;
     /* Adjust other properties as needed for this screen size */
   }
 
@@ -1288,7 +1288,7 @@ body .item-1-orangestripe {
   .item13-menu-container {
     width: 900px;
     height: 800px;
-    top: 230%;
+    top: 280%;
 
 
     /* Adjust other properties as needed for this screen size */
@@ -1388,6 +1388,18 @@ body .item-1-orangestripe {
   }
 }
 
+@media screen and (max-width: 662px) {
+  .item16-menukaart-text {
+    width: 45%;
+    /* Adjusted width for smallest screens */
+    right: 2%;
+    top: 12%;
+    /* Adjusted position for smallest screens */
+    font-size: x-small;
+    /* Adjusted font size for smallest screens */
+  }
+}
+
 .item18-dinerkaart-h1 {
   position: absolute;
   width: 30%;
@@ -1458,9 +1470,39 @@ body .item-1-orangestripe {
   white-space: pre-line;
   line-height: 1.5;
   padding-left: 10px;
-  font-size: x-large;
+  font-size: xx-large;
   color: #DC9A6C;
 }
+
+/* Media Query for maximum width 1392px */
+@media screen and (max-width: 1392px) {
+  .item19-menu-link {
+    /* Adjust the styles for 1392px max width */
+    width: 40%; /* Example adjustment */
+    right: 2%;
+    font-size: large; /* Example adjustment */
+  }
+}
+
+/* Media Query for maximum width 1168px */
+@media screen and (max-width: 1168px) {
+  .item19-menu-link {
+    /* Adjust the styles for 1168px max width */
+    width: 45%; /* Example adjustment */
+    right: -3%;
+    font-size: medium; /* Example adjustment */
+  }
+}
+
+/* Media Query for maximum width 862px */
+@media screen and (max-width: 862px) {
+  .item19-menu-link {
+    /* Adjust the styles for 862px max width */
+    width: 50%; /* Example adjustment */
+    font-size: small; /* Example adjustment */
+  }
+}
+
 
 .item17-wijnkaart-text {
   position: absolute;
@@ -1520,6 +1562,19 @@ body .item-1-orangestripe {
     /* Adjusted font size for smallest screens */
   }
 }
+
+@media screen and (max-width: 662px) {
+  .item17-wijnkaart-text {
+    width: 45%;
+    /* Adjusted width for smallest screens */
+    left: 2%;
+    bottom: 8%;
+    /* Adjusted position for smallest screens */
+    font-size: x-small;
+    /* Adjusted font size for smallest screens */
+  }
+}
+
 
 .item19-wijnkaart-h1 {
   position: absolute;
