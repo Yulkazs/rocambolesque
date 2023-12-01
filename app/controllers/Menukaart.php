@@ -10,4 +10,15 @@ class Menukaart extends BaseController
     
         $this->view('Menukaart/index', $data);
     }
+
 }
+
+session_start();
+
+$errors = array();
+
+$etenTitel = "";
+$descNL = "";
+$descENg = "";
+
+
