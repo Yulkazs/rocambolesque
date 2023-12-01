@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../public/css/paginas/menu.css">
     <link rel="stylesheet" href="../public/paginas/css/header.css">
+    <link rel="stylesheet" href="public/css/global.css">
+
     <title>Rocambolesque ®</title>
 </head>
 <body>
