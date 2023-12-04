@@ -7,7 +7,7 @@ class Reserveren extends BaseController
         $data = [
             'title' => 'Home'
         ];
-    
+
         $this->view('Reserveren/index', $data);
     }
 }

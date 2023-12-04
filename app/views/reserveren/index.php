@@ -37,7 +37,6 @@
     </div>
 
 
-
     <!--de navbar-->
 
     <h2 class="Reserveren-openingstijd">Het restaurant is iedere dag van 17:00 - 22:00 geopened. De bar is van 22:00 - 00:00 open.</h2>
