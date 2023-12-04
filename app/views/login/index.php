@@ -12,7 +12,9 @@
 
 <body>
     <div class="login-container">
+    <a href="../">Terug naar home</a>
         <h2>Inloggen</h2>
+        
 
         <?php if (isset($data['error']) && !empty($data['error'])): ?>
             <div class="alert alert-danger" role="alert">
