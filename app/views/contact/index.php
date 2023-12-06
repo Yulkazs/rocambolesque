@@ -24,14 +24,14 @@
 	<h1>Contact</h1>
 </div>
 
-<p class="text">Need to get in touch? Here's how:</p>
+<p class="text">Wilt u contact opnemen? Hier is hoe:</p>
 
 <!-- Contact -->
 <div class="contact-container">
-	<h1 class="title">Visit Us!</h1>
+	<h1 class="title">Bezoek ons!</h1>
 	<p class="adress">
 		<i class="fas fa-map-marker-alt"></i>
-		<span>Adress:</span>
+		<span>Adres:</span>
 		<br>
 		<span>Australiëlaan 1234 EC</span>
 		<br>
@@ -39,16 +39,16 @@
 	</p>
 	<div class="mail-us">
 		<i class="fas fa-envelope"></i>
-		<span>Mail Us:</span>
+		<span>E-mail ons:</span>
 		<br>
-		<input type="text" placeholder="Your Email" id="email"></input>
+		<input type="text" placeholder="Uw Email" id="email"></input>
 		<button id="sendEmail"><i class="fa-solid fa-paper-plane"></i></button>
 	</div>
 </div>
 
 <!-- Map -->
 <div class="row">
-<h1 class="title">See Where We Are!</h1>
+<h1 class="title">Kijk waar we zijn!</h1>
 	<div class="col">
 		<div id="map"></div>
 	</div>
