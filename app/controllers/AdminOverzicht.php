@@ -14,6 +14,31 @@ class AdminOverzicht extends BaseController
     public function index()
     {
 
+        $result = $this->reserverenModel->getklantGegevens();
+        // var_dump($result);
+
+        $rows = "";
+        foreach ($result as $klantGegevens) {
+
+
+            $rows .= "<tr>
+            <td>$klantGegevens->klantId</td>
+            <td>$klantGegevens->voornaam</td>
+            <td>$klantGegevens->achternaam</td>
+            <td>$klantGegevens->email</td>
+            <td>$klantGegevens->telefoon_nummer</td>
+            </tr>";
+        }
+
+        $data = [
+            'title' => 'Home',
+            'result' => $rows
+        ];
+        $this->view('admin/index', $data);
+    }
+
+    public function getReserveringen()
+    {
         $result = $this->reserverenModel->getReserveringen();
         // var_dump($result);
 
@@ -22,11 +47,11 @@ class AdminOverzicht extends BaseController
 
 
             $rows .= "<tr>
-            <td>$reserveringen->klantId</td>
-            <td>$reserveringen->voornaam</td>
-            <td>$reserveringen->achternaam</td>
-            <td>$reserveringen->email</td>
-            <td>$reserveringen->telefoon_nummer</td>
+            <td>$reserveringen->Id</td>
+            <td>$reserveringen->aantal_personen</td>
+            <td>$reserveringen->datum</td>
+            <td>$reserveringen->tijd</td>
+            <td>$reserveringen->tafel</td>
             </tr>";
         }
 
@@ -34,11 +59,19 @@ class AdminOverzicht extends BaseController
             'title' => 'Home',
             'result' => $rows
         ];
-        // $data = [
-        //     'title' => 'Home'
-        // ];
         $this->view('admin/index', $data);
     }
+
+
+
+
+
+
+
+
+
+
+
 
 
     // public function overzichtReserveren()
