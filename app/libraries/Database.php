@@ -18,18 +18,11 @@ class Database
         $this->statement = $this->dbHandler->prepare($sql);
     }
 
-<<<<<<< HEAD
-    public function bind($parameter, $value)
-    {
-        $this->statement->bindValue($parameter, $value);
-    }
-=======
      public function bind($parameter, $value)
     {
         $this->statement->bindValue($parameter, $value);
     }
 
->>>>>>> b0048831ff62fede3ef402dad371975ba534200d
 
     public function execute()
     {
