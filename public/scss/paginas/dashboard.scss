@@ -1,0 +1,145 @@
+@use "../config/config";
+@use "../font";
+
+body {
+   background: url(../../Images/backgrounds/restaurant.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   z-index: -1;
+   // Bluring the Background
+    &::before {
+         content: "";
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: inherit;
+         filter: blur(3px);
+         z-index: -1;
+    }
+    .trgButton {
+        text-decoration: none;
+        color: config.get-color("white");
+        font-family: "Roboto Slab";
+        text-shadow: 1px 1px 4px config.get-color("black");
+        font-size: 1rem;
+        position: relative;
+        top: 9rem;
+        left: 25%;
+        i {
+            margin-right: .5rem;
+        }
+    }
+    // Glass Effect
+   .glass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 11rem;
+        left: 25%;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        width: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        font-family: "Roboto Slab";
+        // Styling the Create Date.
+        #creationDate {
+            color: config.get-color("black");
+            font-size: 1rem;
+
+        }
+        // Admin edit Section
+        #edit {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            h2 {
+                color: config.get-color("lbrown");
+                text-shadow: 1px 1px 3px config.get-color("black");
+                text-align: left;
+            }
+            hr {
+                border: 1px solid config.get-color("lbrown");
+                width: 100%;
+                margin-top: -1rem;
+            }
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                button {
+                    padding: 15px;
+                    border: none;
+                    border-radius: 6px;
+                    color: config.get-color("white");
+                    background-color: config.get-color("teal");
+                    font-family: "Roboto Slab";
+                    text-shadow: 1px 1px 3px config.get-color("black");
+                    font-size: 1rem;
+                    box-shadow: 1px 1px 4px config.get-color("black");
+                    cursor: pointer;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: config.get-color("lbrown");
+                        box-shadow: 1px 1px 4px config.get-color("black");
+                        transition: ease 0.5s;
+                    }
+                }
+            }
+        }
+        // User Section
+        #pages {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 2rem;
+            box-shadow: 1px 1px 3px config.get-color("black");
+            a {
+                text-decoration: none;
+                color: config.get-color("white");
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+                text-shadow: 1px 1px 3px config.get-color("black");
+            }
+            #linkContact {
+                margin-top: .5rem;
+            }
+        }
+        #inbox {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 10rem;
+            h2 {
+                color: config.get-color("lbrown");
+                text-shadow: 1px 1px 3px config.get-color("black");
+                text-align: left;
+            }
+            hr {
+                border: 1px solid config.get-color("lbrown");
+                width: 100%;
+                margin-top: -1rem;
+            }
+        }
+   }
+}
+
+
+// Disable Scrollbar
+::-webkit-scrollbar {
+    display: none;
+}

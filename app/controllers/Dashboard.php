@@ -15,7 +15,7 @@ class dashboard extends BaseController
     {
         session_start();
         session_destroy();
-        header('Location: /login/index');
+        header('Location: /login');
     }
 
 
