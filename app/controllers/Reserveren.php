@@ -1,5 +1,4 @@
 <?php
-
 class Reserveren extends BaseController
 {
     public function index()
@@ -9,5 +8,10 @@ class Reserveren extends BaseController
         ];
 
         $this->view('Reserveren/index', $data);
+    }
+    public function store()
+    {
+        $personen = $_POST["personen"];
+        echo $personen;
     }
 }

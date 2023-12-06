@@ -12,7 +12,7 @@ class ReserverenModel
     public function getReserveringen()
     {
         $sql = "SELECT *
-        FROM reserveren";
+        FROM klant";
 
         $this->db->query($sql);
         return $this->db->resultSet();

@@ -32,6 +32,7 @@
             <div class="reserveren">
                 <a href="reserveren">RESERVEREN</a>
             </div>
+            <a href="adminOverzicht">admin</a>
         </div>
     </section>
 </body>

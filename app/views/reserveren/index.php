@@ -43,7 +43,7 @@
 
     <div class="container">
         <h2>Reserveren</h2>
-        <form>
+        <form action="reserveren/store" method="post">
             <div class="form-group">
                 <label for="personen">Aantal personen:</label>
                 <input type="number" id="personen" name="personen" min="1" max="50" required>
