@@ -1,6 +1,6 @@
 <?php
 
-class ReserverenModel
+class CountryModel
 {
     private $db;
 
@@ -9,12 +9,18 @@ class ReserverenModel
         $this->db = new Database();
     }
 
-    public function getReserveringen()
+    public function getCountries()
     {
-        $sql = "SELECT *
-        FROM reserveren";
+        $sql = "SELECT  Id
+                       ,Naam
+                FROM   Country";
 
         $this->db->query($sql);
+
         return $this->db->resultSet();
     }
 }
+
+/**
+ * Verwijderen na gebruik!
+ */

@@ -44,5 +44,16 @@ class UserModel
 
     }
 
+    public function getUserName() {
+        // Voer hier de query uit om de gebruikersnaam op te halen
+
+        $this->db->query('select name from users where id = :id');
+        $this->db->bind(':id', $_SESSION['user_id']);
+        return $this->db->result();
+        }
+        
+
+    
+     
    
 }
