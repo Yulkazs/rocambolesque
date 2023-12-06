@@ -30,11 +30,11 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Klant Id</th>
-                <th>Voornaam</th>
-                <th>Achternaam</th>
-                <th>E-mail</th>
-                <th>Telefoonnummer</th>
+                <th>Id</th>
+                <th>Aantal personen</th>
+                <th>Datum</th>
+                <th>Tijd</th>
+                <th>Tafel</th>
 
             </tr>
         </thead>
