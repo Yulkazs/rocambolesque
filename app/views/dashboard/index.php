@@ -7,10 +7,14 @@
 </head>
 <body>
 
-Under construction
-
 <div class="ga-terug-container">
     <a href="../login/index.php">← Ga terug</a>
+</div>
+
+<div class="dashboard-container">
+    <h1>Dashboard</h1>
+    <h2>Welkom <?php echo $data['name']; ?></h2>
+    <a href="../dashboard/logout">Uitloggen</a>
 </div>
 
 

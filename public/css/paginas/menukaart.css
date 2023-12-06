@@ -1,67 +1,72 @@
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-}
-
-.menu-titel {
-  text-align: center;
-  top: 7rem;
-  color: #DC9A6C;
-  position: relative;
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@font-face {
+  src: url(../../fonts/Good\ Brush.ttf);
   font-family: "Good Brush";
 }
-
-.CHEFS-BITES {
-  margin-left: 3rem;
+body {
+  width: 100%;
 }
-
-.minimum {
-  color: rgba(0, 0, 0, 0.422);
-  margin-top: -1rem;
-}
-
-.roca-container {
+body .svg-top {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-
-.roca {
-  margin-left: 3rem;
+body .svg-top .svg-left svg {
+  margin-top: -30%;
+  margin-left: -8%;
 }
-
-.roca-prijs {
-  text-align: center;
-  margin-left: 8rem;
-  font-weight: bold;
+body .svg-top .svg-right svg {
+  margin-right: -5%;
 }
-
-.diner-kaart {
-  margin-left: 3rem;
+body .head #title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-top: -1%;
+  margin-left: 46%;
+  color: #D99F6C;
+  font-family: "Good Brush";
 }
-
-.hallo {
-  text-align: center;
-  margin-top: -29rem;
-}
-
-.prijs {
+body .head #menuLink {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 45rem;
+  margin-left: 5%;
+  margin-top: -3%;
+  text-decoration: none;
+  color: #D99F6C;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Roboto Slab";
 }
-
-table {
-  background-color: red;
+body .container_chefbites {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Slab";
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size: 1.5rem;
+}
+body .container_chefbites #title {
+  text-transform: uppercase;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px #000000;
+}
+body .container_chefbites #desc-eng {
+  color: #a6a6a6;
+}
+body .container_chefbites .table_chefbites {
+  display: flex;
+  justify-content: space-between;
+}
+body .container_chefbites .table_chefbites tr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body .container_chefbites .table_chefbites tr #prijs {
+  font-weight: 700;
+  margin-left: 15rem;
+}
+body .container_chefbites .table_chefbites .colored {
+  color: #3FC2A0;
 }
 
 /*# sourceMappingURL=menukaart.css.map */

@@ -13,7 +13,18 @@
 </head>
 
 <body>
+    <?php
+    $tags = [
+        '<link rel="stylesheet" href="/public/css/index.css">',
+    ];
+    $data = [
+        'tags' => $tags,
+        'nav' => true
+    ];
 
+
+    $this->utils('header', $data);
+    ?>
     <div class="reserveren-banner">
         <img src="/public/Images/backgrounds//reserveren.png" alt="Reserveren"><br>
     </div>
@@ -24,7 +35,6 @@
     <h1 class="Reserveren-titel">Reserveren</h1>
 
     </div>
-    
 
 
     <!--de navbar-->
@@ -36,7 +46,7 @@
         <form>
             <div class="form-group">
                 <label for="personen">Aantal personen:</label>
-                <input type="number" id="personen" name="personen"  min="1" max="50" required>
+                <input type="number" id="personen" name="personen" min="1" max="50" required>
             </div>
             <div class="form-group">
                 <label for="datum">Datum:</label>
@@ -58,17 +68,6 @@
             <button type="submit">Reserveren</button>
         </form>
     </div>
-    <?php
-    $tags = [
-        '<link rel="stylesheet" href="/public/css/index.css">',
-    ];
-    $data = [
-        'tags' => $tags,
-        'nav' => true
-    ];
+    <?php $this->utils('footer', []); ?>
 
-
-    $this->utils('header', $data);
-
-    ?>
 </body>
