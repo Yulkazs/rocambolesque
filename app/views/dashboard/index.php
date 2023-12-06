@@ -20,11 +20,10 @@
         <a href="/home" class="trgButton"><i class="fa-solid fa-arrow-left"></i>Ga Terug</a>
         <div class="glass">
             <!-- Welcome the user -->
-            <?php if (isset($_SESSTION['name'])): ?>
+            <?php if (isset($_SESSION['name'])): ?>
                 <?php $name = $_SESSION['name']; ?>
                     <h1 id="welcome">Welkom <?php echo $name; ?></h1>
                 <?php endif; ?>
-            <h1 id="welcome">Welkom E</h1>
 
             <!-- Creation Date -->
             <?php if(isset($_SESSION['creation_date'])): ?>
@@ -48,7 +47,7 @@
         <a href="/home" class="trgButton"><i class="fa-solid fa-arrow-left"></i>Ga Terug</a>
         <div class="glass">
             <!-- Welcome the user -->
-            <?php if (isset($_SESSTION['name'])): ?>
+            <?php if (isset($_SESSION['name'])): ?>
                 <?php $name = $_SESSION['name']; ?>
                     <h1 id="welcome">Welkom <?php echo $name; ?></h1>
                 <?php endif; ?>
