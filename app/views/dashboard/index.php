@@ -31,7 +31,6 @@
                 <?php $date = $_SESSION['creation_date']; ?>
                     <p id="creationDate">Uw account is aangemaakt op: <?php echo $date; ?></p>
                 <?php endif; ?>
-                <p id="creationDate">Uw account is aangemaakt op: 2023-12-04 11:38:52</p>
             
                 <section id="pages">
                     <a href="/menu" id="linkMenu"><img src="public/Images/Icons/more.png">Menu</a>
@@ -53,14 +52,12 @@
                 <?php $name = $_SESSION['name']; ?>
                     <h1 id="welcome">Welkom <?php echo $name; ?></h1>
                 <?php endif; ?>
-            <h1 id="welcome">Welkom E</h1>
 
             <!-- Creation Date -->
             <?php if(isset($_SESSION['creation_date'])): ?>
                 <?php $date = $_SESSION['creation_date']; ?>
                     <p id="creationDate">Uw account is aangemaakt op: <?php echo $date; ?></p>
                 <?php endif; ?>
-                <p id="creationDate">Uw account is aangemaakt op: 2023-12-04 11:38:52</p>
 
             <!-- Menu Kaaart Wijzigen -->
             <section id="edit">

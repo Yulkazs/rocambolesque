@@ -49,6 +49,8 @@ class Login extends BaseController
             if (password_verify($password, $hashedPassword)) {
                 $_SESSION['authLevel'] = $user->authLevel;
                 $_SESSION['user_id'] = $user->id; // Sla de gebruikerssessie op
+                $_SESSION['name'] = $user->name;
+                $_SESSION['creation_date'] = $user->creation_date;
                 header("Location: /dashboard");
                 exit; // Zorg ervoor dat het script stopt na de redirect
             } else {
