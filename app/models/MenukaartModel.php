@@ -8,6 +8,4 @@ class MenukaartModel
     {
         $this->db = new Database();
     }
-
-
 }
