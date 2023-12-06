@@ -47,8 +47,9 @@ class Login extends BaseController
             $hashedPassword = $user->password;
 
             if (password_verify($password, $hashedPassword)) {
+                $_SESSION['authLevel'] = $user->authLevel;
                 $_SESSION['user_id'] = $user->id; // Sla de gebruikerssessie op
-                header("Location: /Dashboard/index");
+                header("Location: /dashboard");
                 exit; // Zorg ervoor dat het script stopt na de redirect
             } else {
                 $_SESSION['error'] = "Onjuist wachtwoord";

@@ -16,13 +16,14 @@ class UserModel
         return $this->db->result();
     }
 
-    function register($email, $name, $number, $password)
+    function register($email, $name, $number, $password, $authLevel = 1)
     {
-        $this->db->query('insert into users (email, name, number, password) values (:email, :name, :number, :password)');
+        $this->db->query('insert into users (email, name, number, password, authLevel) values (:email, :name, :number, :password, :authLevel)');
         $this->db->bind(':email', $email);
         $this->db->bind(':name', $name);
         $this->db->bind(':number', $number);
         $this->db->bind(':password', $password);
+        $this->db->bind(':authLevel', $authLevel);
         $this->db->execute();
     }
 

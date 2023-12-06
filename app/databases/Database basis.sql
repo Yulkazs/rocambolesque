@@ -8,5 +8,6 @@ CREATE TABLE users (
     number VARCHAR(11) NOT NULL,
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
+    authLevel INT(1) NOT NULL,
     creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
