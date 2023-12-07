@@ -52,6 +52,11 @@ class AdminOverzicht extends BaseController
             <td>$reserveringen->datum</td>
             <td>$reserveringen->tijd</td>
             <td>$reserveringen->tafel</td>
+            <td>
+            <a href='" . URLROOT . "/adminOverzicht/klantGegevens/$reserveringen->Id'>
+            <img src = '\public\Images\Icons\chat.png'>
+            </a>
+</td>
             </tr>";
         }
 
@@ -61,7 +66,11 @@ class AdminOverzicht extends BaseController
         ];
         $this->view('admin/index', $data);
     }
-
+    public function klantGegevens($reserveringen)
+    {
+        $this->reserverenModel->getklantGegevens($reserveringen);
+        $this->view('AdminOverzicht/getklantGegevens');
+    }
 
 
 

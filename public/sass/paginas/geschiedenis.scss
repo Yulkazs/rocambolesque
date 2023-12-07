@@ -1,484 +1,504 @@
 // @use "./font";
 
 body {
-  
+
   .banner {
-        img {
-            width: 100.15%;
-            height: 100%;
-            position: absolute;
-            left: -.2rem;
-            top: -18rem;
-            z-index: -1;
-        }
-    }
-    
-    .wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-
-      .container {
-        text-align: center;
-        width: 80%;   
-        height: 150%;
-        font-family: 'Poppins', sans-serif;
-      }
-    }
-
-    .wrapper1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin-top: -860px;
-
-      .container1 {
-        text-align: center;
-        width: 80%;   
-        height: 150%;
-        font-family: 'Poppins', sans-serif;
-        
-        line-height: 1.6;
-      }
-
-      p {
-        background-color: bisque;
-        padding: 140px;
-        font-size: 20px;
-      }
-    }
-    
-    * {
-      box-sizing: border-box;
-    }
-    
-    /* Slideshow container */
-    
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: -900px auto 0; 
-      z-index: 3;
-    }
-    
-    /* Hide the images by default */
-    
-    .mySlides {
-      display: none;
-    }
-    
-    /* Next & previous buttons */
-    
-    .prev {
-      cursor: pointer;
+    img {
+      width: 100.15%;
+      height: 100%;
       position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -22px;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
+      left: -.2rem;
+      top: -18rem;
+      z-index: -1;
     }
-    
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -22px;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    
-    /* Position the "next button" to the right */
-    
-    /* On hover, add a black background color with a little bit see-through */
-    
-    .prev:hover, .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-    
-    /* Caption text */
-    
-    .text {
-      color: #f2f2f2;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .container {
       text-align: center;
+      width: 80%;
+      height: 150%;
+      font-family: 'Poppins', sans-serif;
     }
-    
-    /* Number text (1/3 etc) */
-    
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-    
-    /* The dots/bullets/indicators */
-    
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
-    
-    .active, .dot:hover {
-      background-color: #717171;
-    }
-    
-    /* Fading animation */
-    
-    .fade {
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-    
-    @keyframes fade {
-      from {
-        opacity: .4;
-      }
-    
-      to {
-        opacity: 1;
-      }
+  }
+
+  .wrapper1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -860px;
+
+    .container1 {
+      text-align: center;
+      width: 80%;
+      height: 150%;
+      font-family: 'Poppins', sans-serif;
+
+      line-height: 1.6;
     }
 
-    // image with text on the right
-    .image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      /* Adjust the height as needed */
+    p {
+      background-color: bisque;
+      padding: 140px;
+      font-size: 20px;
+    }
+  }
 
-      p {
-        background-color: bisque;
-        padding: 140px;
-        
-      }
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Slideshow container */
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: -900px auto 0;
+    z-index: 3;
+  }
+
+  /* Hide the images by default */
+
+  .mySlides {
+    display: none;
+  }
+
+  /* Next & previous buttons */
+
+  .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* Position the "next button" to the right */
+
+  /* On hover, add a black background color with a little bit see-through */
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Caption text */
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4;
     }
-    
-    
-    .image-container {
-      display: flex;
-      align-items: center;
-      
+
+    to {
+      opacity: 1;
     }
-    
-    img.demo {
-      max-width: 45%;
-      /* Adjust the width of the image as needed */
+  }
+
+  // image with text on the right
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Adjust the height as needed */
+
+    p {
+      background-color: bisque;
+      padding: 140px;
+
+    }
+  }
+
+
+  .image-container {
+    display: flex;
+    align-items: center;
+
+  }
+
+  img.demo {
+    max-width: 45%;
+    /* Adjust the width of the image as needed */
+    height: auto;
+  }
+
+  .text1 {
+    padding: 20px;
+
+
+
+
+    p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 15px;
+    }
+  }
+
+  /* Add this CSS to set a fixed width and height for the images */
+  .slide-image {
+    width: 100%;
+    /* Set the width to 100% to make the images responsive */
+    height: 700px;
+    margin-top: 300px;
+    /* Set the desired height for all images */
+  }
+
+
+
+  footer {
+    background-color: #ffffff;
+    color: black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 0 20px;
+    display: inline-block;
+    vertical-align: top;
+    /* Align sections at the top */
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #A55F3E;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 0;
+    /* Remove margin to ensure consistent height */
+    padding: 10px 0;
+    /* Add padding to control the height */
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Style for smaller screens (e.g., mobile phones) */
+  /* Style for smaller screens (e.g., mobile phones) */
+  @media only screen and (max-width: 992px) {
+    .banner img {
+      width: 100%;
       height: auto;
     }
-    
-    .text1 {
-      padding: 20px;
-      
-    
-     
-    
-      p {
-        font-size: 20px;
-        line-height: 1.6;
-        margin: 0;
-        font-family: 'Poppins', sans-serif;
-        margin-bottom: 15px;
-      }
+
+    .wrapper,
+    .wrapper1 {
+      padding: 40px;
+      text-align: left;
     }
 
-    /* Add this CSS to set a fixed width and height for the images */
-    .slide-image {
-      width: 100%; /* Set the width to 100% to make the images responsive */
-      height: 700px;
-      margin-top: 300px; /* Set the desired height for all images */
-    }
-
-
-    
-    footer {
-      background-color: #ffffff;
-      color: black;
-      padding: 20px;
+    .container {
       text-align: center;
     }
-    
-    .footer-section {
-      margin: 0 20px;
-      display: inline-block;
-      vertical-align: top; /* Align sections at the top */
+
+    .container h1 {
+      font-size: 36px;
+      margin-top: -40px;
+      /* Adjusted margin */
     }
-    
-    h2 {
+
+    .container1 {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .container1 p {
       font-size: 20px;
-      color: #A55F3E;
-      font-family: 'Poppins', sans-serif;
-    }
-    
-    p {
-      font-size: 16px;
-      margin: 0; /* Remove margin to ensure consistent height */
-      padding: 10px 0; /* Add padding to control the height */
-      font-family: 'Poppins', sans-serif;
+      background-color: bisque;
     }
 
-        /* Style for smaller screens (e.g., mobile phones) */
-        /* Style for smaller screens (e.g., mobile phones) */
-    @media only screen and (max-width: 992px) {
-      .banner img {
-          width: 100%;
-          height: auto;
-      }
-
-      .wrapper, .wrapper1 {
-          padding: 40px;
-          text-align: left;
-      }
-
-      .container {
-          text-align: center;
-      }
-
-      .container h1 {
-          font-size: 36px;
-          margin-top: -40px; /* Adjusted margin */
-      }
-
-      .container1 {
-          max-width: 800px;
-          margin: 0 auto;
-      }
-
-      .container1 p {
-          font-size: 20px;
-          background-color: bisque;
-      }
-
-      .slideshow-container {
-          max-width: 800px;
-          margin: 0 auto;
-          overflow: hidden;
-          position: relative;
-          height: 1300px; /* Changed to auto for responsive height */
-      }
-
-      .image-container {
-          flex-direction: column;
-      }
-
-      .image-container img {
-          max-width: 100%;
-          margin-bottom: 20px; /* Adjusted margin */
-      }
-
-      .text1 {
-          text-align: center;
-      }
-
-      .text1 p {
-          margin-bottom: 20px; /* Adjusted margin */
-      }
+    .slideshow-container {
+      max-width: 800px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      height: 1300px;
+      /* Changed to auto for responsive height */
     }
 
+    .image-container {
+      flex-direction: column;
+    }
 
-      @media screen and (max-width: 768px) {
-        .banner img {
-          width: 100%;
-          height: auto;
-        }
-  
-        .wrapper, .wrapper1 {
-          padding: 40px;
-          text-align: left;
-        }
-  
-        .container {
-          text-align: center; /* Center-align the content */
-        }
-      
-        .container h1 {
-          font-size: 36px; /* Adjust the font size as needed for larger screens */
-          margin-top: -40px; /* Add some top margin to separate it from other content */
-        }
-  
-        .container1 {
-          max-width: 800px;
-          margin: 0 auto;
-        }
-  
-        .container1 p {
-          font-size: 14px;
-          background-color: bisque;
-        }
-  
-        .slideshow-container {
-          max-width: 800px;
-          margin: 0 auto;
-          margin-top: -250px; /* Adjust this value as needed */
-          overflow: hidden;
-          position: relative;
-          height: 100%;
-        }
-  
-        .image-container {
-          flex-direction: column;
-        }
-  
-        .image-container img {
-          max-width: 100%;
-          margin-top: -300px;
-        }
-  
-        .text1 {
-          text-align: center;
-          
-          p {
-            margin-bottom: -900px;
-          }
-        }
-        
-      }
+    .image-container img {
+      max-width: 100%;
+      margin-bottom: 20px;
+      /* Adjusted margin */
+    }
 
-      @media screen and (max-width: 562px) {
-        .banner img {
-          width: 100%;
-          height: auto;
-        }
-  
-        .wrapper, .wrapper1 {
-          padding: 40px;
-          text-align: left;
-        }
-  
-        .container {
-          text-align: center; /* Center-align the content */
-        }
-      
-        .container h1 {
-          font-size: 36px; /* Adjust the font size as needed for larger screens */
-          margin-top: -40px; /* Add some top margin to separate it from other content */
-        }
-  
-        .container1 {
-          max-width: 800px;
-          margin: 0 auto;
-        }
-  
-        .container1 p {
-          font-size: 20px;
-          background-color: bisque;
-          position: relative;
-          z-index: 1;
-          line-height: 0.8;
-        }
-  
-        .slideshow-container {
-          max-width: 800px;
-          margin: 0 auto;
-          margin-top: -250px; /* Adjust this value as needed */
-          overflow: hidden;
-          position: relative;
-          height: 100%;
-        }
-  
-        .image-container {
-          flex-direction: column;
-        }
-  
-        .image-container img {
-          max-width: 100%;
-          margin-bottom: -450px;
-        }
-  
-        .text1 {
-          text-align: center;
-          
-          p {
-            margin-bottom: -900px;
-          }
-        }
-        
+    .text1 {
+      text-align: center;
+    }
+
+    .text1 p {
+      margin-bottom: 20px;
+      /* Adjusted margin */
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
+
+    .wrapper,
+    .wrapper1 {
+      padding: 40px;
+      text-align: left;
+    }
+
+    .container {
+      text-align: center;
+      /* Center-align the content */
+    }
+
+    .container h1 {
+      font-size: 36px;
+      /* Adjust the font size as needed for larger screens */
+      margin-top: -40px;
+      /* Add some top margin to separate it from other content */
+    }
+
+    .container1 {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .container1 p {
+      font-size: 14px;
+      background-color: bisque;
+    }
+
+    .slideshow-container {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: -250px;
+      /* Adjust this value as needed */
+      overflow: hidden;
+      position: relative;
+      height: 100%;
+    }
+
+    .image-container {
+      flex-direction: column;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      margin-top: -300px;
+    }
+
+    .text1 {
+      text-align: center;
+
+      p {
+        margin-bottom: -900px;
       }
     }
 
-    /* Style for larger screens (e.g., tablets and desktops) */
-    // @media only screen and (min-width: 889px) {
-    //   .banner img {
-    //     width: 100%;
-    //     height: auto;
-    //   }
+  }
 
-    //   .wrapper, .wrapper1 {
-    //     padding: 40px;
-    //     text-align: left;
-    //     position: relative;
-    //     z-index: 2;
-    //   }
+  @media screen and (max-width: 562px) {
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
 
-    //   .container {
-    //     text-align: center; /* Center-align the content */
-    //   }
-    
-    //   .container h1 {
-    //     font-size: 36px; /* Adjust the font size as needed for larger screens */
-    //     margin-top: -50px; /* Add some top margin to separate it from other content */
-    //   }
+    .wrapper,
+    .wrapper1 {
+      padding: 40px;
+      text-align: left;
+    }
 
-    //   .container1 {
-    //     max-width: 800px;
-    //     margin: 0 auto;
-    //   }
+    .container {
+      text-align: center;
+      /* Center-align the content */
+    }
 
-    //   .container1 p {
-    //     font-size: 18px;
-    //     background-color: bisque;
-    //   }
+    .container h1 {
+      font-size: 36px;
+      /* Adjust the font size as needed for larger screens */
+      margin-top: -40px;
+      /* Add some top margin to separate it from other content */
+    }
 
-    //   .slideshow-container {
-    //     max-width: 800px;
-    //     margin: 0 auto;
-    //     margin-top: 10px; /* Adjust this value as needed */
-    //     overflow: hidden;
-    //     position: relative;
-    //     height: 100%;
-    //   }
+    .container1 {
+      max-width: 800px;
+      margin: 0 auto;
+    }
 
-    //   .image-container {
-    //     display: flex;
-    //   }
+    .container1 p {
+      font-size: 20px;
+      background-color: bisque;
+      position: relative;
+      z-index: 1;
+      line-height: 0.8;
+    }
 
-    //   .image-container img {
-    //     max-width: 50%;
-    //     margin-right: 20px;
-    //   }
+    .slideshow-container {
+      max-width: 800px;
+      margin: 0 auto;
+      margin-top: -250px;
+      /* Adjust this value as needed */
+      overflow: hidden;
+      position: relative;
+      height: 100%;
+    }
 
-    //   .text1 {
-    //     text-align: left;
-    //     margin-bottom: -1500px;
-    //   }
-    // }
-    
-  
+    .image-container {
+      flex-direction: column;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      margin-bottom: -450px;
+    }
+
+    .text1 {
+      text-align: center;
+
+      p {
+        margin-bottom: -900px;
+      }
+    }
+
+  }
+}
+
+/* Style for larger screens (e.g., tablets and desktops) */
+// @media only screen and (min-width: 889px) {
+//   .banner img {
+//     width: 100%;
+//     height: auto;
+//   }
+
+//   .wrapper, .wrapper1 {
+//     padding: 40px;
+//     text-align: left;
+//     position: relative;
+//     z-index: 2;
+//   }
+
+//   .container {
+//     text-align: center; /* Center-align the content */
+//   }
+
+//   .container h1 {
+//     font-size: 36px; /* Adjust the font size as needed for larger screens */
+//     margin-top: -50px; /* Add some top margin to separate it from other content */
+//   }
+
+//   .container1 {
+//     max-width: 800px;
+//     margin: 0 auto;
+//   }
+
+//   .container1 p {
+//     font-size: 18px;
+//     background-color: bisque;
+//   }
+
+//   .slideshow-container {
+//     max-width: 800px;
+//     margin: 0 auto;
+//     margin-top: 10px; /* Adjust this value as needed */
+//     overflow: hidden;
+//     position: relative;
+//     height: 100%;
+//   }
+
+//   .image-container {
+//     display: flex;
+//   }
+
+//   .image-container img {
+//     max-width: 50%;
+//     margin-right: 20px;
+//   }
+
+//   .text1 {
+//     text-align: left;
+//     margin-bottom: -1500px;
+//   }
+// }

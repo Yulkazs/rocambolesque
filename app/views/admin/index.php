@@ -10,7 +10,7 @@
 
 <body>
     <h1>Admin</h1>
-    <table class="table">
+    <!-- <table class="table">
         <thead>
             <tr>
                 <th>Klant Id</th>
@@ -25,7 +25,7 @@
             <?= $data['result'];
             ?>
         </tbody>
-    </table>
+    </table> -->
 
     <table class="table">
         <thead>
@@ -35,6 +35,7 @@
                 <th>Datum</th>
                 <th>Tijd</th>
                 <th>Tafel</th>
+                <th>Klant Gegevens</th>
 
             </tr>
         </thead>
