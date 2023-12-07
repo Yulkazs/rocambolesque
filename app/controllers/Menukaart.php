@@ -11,14 +11,17 @@ class Menukaart extends BaseController
         $this->view('Menukaart/index', $data);
     }
 
+    public function menuItem()
+    {
+       session_start();
+       $name = "";
+       $descNL = "";
+       $descEN = "";
+       $price = "";
+
+       
+    }
+
 }
-
-session_start();
-
-$errors = array();
-
-$etenTitel = "";
-$descNL = "";
-$descENg = "";
 
 

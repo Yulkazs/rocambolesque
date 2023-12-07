@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,6 +65,20 @@
         </tr>
     </table>
 </div>
+
+<!-- Check if user is logged in as authLevel 1 or authLevel 5 -->
+<?php if(isset($_SESSION['authLevel'])): ?>
+    <?php $authLevel = $_SESSION['authLevel']; ?>
+
+    <!-- User Menu Kaart -->
+    <?php if($authLevel == 1): ?>
+
+    <!-- Admin Menu Kaart -->
+    <?php elseif($authLevel == 5): ?>
+
+    <?php endif; ?>
+<?php endif; ?>
+
 
 <div class="container_dinerkaart">
     <h2 id="title">Dinerkaart</h2>
