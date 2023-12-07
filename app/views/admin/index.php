@@ -40,7 +40,7 @@
             </tr>
         </thead>
         <tbody>
-            <?= $data['result'];
+            <?= $data['test'];
             ?>
         </tbody>
     </table>
