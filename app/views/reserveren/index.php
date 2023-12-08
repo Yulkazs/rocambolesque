@@ -54,7 +54,15 @@
             </div>
             <div class="form-group">
                 <label for="tijd">Tijd:</label>
-                <input type="time" id="tijd" name="tijd" required>
+                <select id="tijd" name="tijd" required>
+
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="tafel">Tafel:</label>
@@ -63,6 +71,15 @@
                     <option value="Tafel 2">Tafel 2</option>
                     <option value="Tafel 3">Tafel 3</option>
                     <option value="Tafel 4">Tafel 4</option>
+                    <option value="Tafel 5">Tafel 5</option>
+                    <option value="Tafel 6">Tafel 6</option>
+                    <option value="Tafel 7">Tafel 7</option>
+                    <option value="Tafel 8">Tafel 8</option>
+                    <option value="Tafel 9">Tafel 9</option>
+                    <option value="Tafel 10">Tafel 10</option>
+
+
+
                 </select>
             </div>
             <button type="submit">Reserveren</button>
