@@ -134,7 +134,7 @@
                         </td>
                         <br>
                         <td><input type="text" name="prijs" placeholder="Prijs"></td>
-                    </tr>
+                    <!--</tr>
                     <tr>
                         <td><input type="text" name="gerecht" placeholder="Gerecht"></td>
                         <br>
@@ -164,9 +164,11 @@
                         </td>
                         <br>
                         <td><input type="text" name="prijs" placeholder="Prijs"></td>
-                    </tr>
+                    </tr>-->
                 </table>
-                <button type="submit" name="submit">Opslaan</button>
+                <button type="submit" name="opslaan">Opslaan</button>
+                <button type="submit" name="verwijderen">Verwijderen</button>
+            </form>
         </div>
 
     <?php endif; ?>
