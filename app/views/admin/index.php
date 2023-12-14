@@ -35,13 +35,14 @@
                 <th>Datum</th>
                 <th>Tijd</th>
                 <th>Tafel</th>
-                <th>Klant Gegevens</th>
+                <!-- <th>Klant Gegevens</th> -->
 
             </tr>
         </thead>
         <tbody>
             <?= $data['test'];
             ?>
+
         </tbody>
     </table>
 

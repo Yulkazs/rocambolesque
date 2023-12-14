@@ -16,30 +16,32 @@ class AdminOverzicht extends BaseController
 
         $test = $this->reserverenModel->getReserveringen();
         // var_dump($test);
-        exit();
+        // exit();
 
         $rows = "";
         foreach ($test as $reserveringen) {
 
-            $reserveringen = $this->reserverenModel->getReserveringen();
-
+            // $reserveringen = $this->reserverenModel->getReserveringen();
+            // var_dump($reserveringen);
             $rows .= "<tr>
-            <td>$reserveringen->voornaam</td>
-            <td>$reserveringen->achternaam</td>
-            <td>$reserveringen->email</td>
-            <td>$reserveringen->telefoon_nummer</td>
+            <td>$reserveringen->Id</td>
+            <td>$reserveringen->aantal_personen</td>
+            <td>$reserveringen->datum</td>
+            <td>$reserveringen->tijd</td>
+            <td>$reserveringen->tafel</td>
+
             </tr>";
         }
 
         $data = [
-            'title' => 'Home',
-            $test => 'result'
+            // 'title' => 'Home',
+            'test' => $rows
         ];
         // $data = [
         //     'title' => 'Home'
         // ];
 
-        $this->view('adminOverzicht/index', $data);
+        $this->view('admin/index', $data);
     }
 
 

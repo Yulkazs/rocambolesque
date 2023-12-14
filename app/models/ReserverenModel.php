@@ -19,7 +19,11 @@ class ReserverenModel
     }
     public function getReserveringen()
     {
-        $sql = "SELECT *
+        $sql = "SELECT Id,
+                       aantal_personen,
+                       datum,
+                       tijd,
+                       tafel
         FROM reserveren";
 
         $this->db->query($sql);
