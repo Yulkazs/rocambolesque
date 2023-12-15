@@ -85,6 +85,62 @@
             <p>18,50</p>
             <p>28,00</p>
         </table>
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Dish</title>
+</head>
+
+<body>
+
+    <h1>Add Dish</h1>
+
+    <form action="index.php" method="post">
+        <label for="name">Dish Name:</label>
+        <input type="text" name="name" required><br>
+
+        <label for="price">Dish Price:</label>
+        <input type="text" name="price" required><br>
+
+        <label for="season">Season:</label>
+        <select name="season" required>
+            <option value="zomer">Zomer</option>
+            <option value="winter">Winter</option>
+        </select><br>
+
+        <label for="cuisine">Cuisine:</label>
+        <select name="cuisine" required>
+            <option value="nl">NL</option>
+            <option value="marokkaans">Marokkaans</option>
+        </select><br>
+
+        <input type="submit" value="Add Dish">
+    </form>
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>
+
+
+
+
+
+
 </body>
 
 </html>
