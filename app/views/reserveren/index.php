@@ -45,8 +45,8 @@
         <h2>Reserveren</h2>
         <form action="reserveren/store" method="post">
             <div class="form-group">
-                <label for="personen">Aantal personen:</label>
-                <input type="number" id="personen" name="personen" min="1" max="50" required>
+                <label for="aantal_personen">Aantal personen:</label>
+                <input type="number" id="aantal_personen" name="aantal_personen" min="1" max="50" required>
             </div>
             <div class="form-group">
                 <label for="datum">Datum:</label>
@@ -64,6 +64,25 @@
                     <option value="Tafel 3">Tafel 3</option>
                     <option value="Tafel 4">Tafel 4</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <input type="number" id="id" name="id" min="1" max="50" required hidden>
+            </div>
+            <div class="form-group">
+                <label for="voornaam">Voornaam:</label>
+                <input type="text" id="voornaam" name="voornaam" min="1" max="50" required>
+            </div>
+            <div class="form-group">
+                <label for="achternaam">Achternaam:</label>
+                <input type="text" id="achternaam" name="achternaam" min="1" max="50" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" min="1" max="50" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Telefoonnummer:</label>
+                <input type="number" id="tel" name="tel" required>
             </div>
             <button type="submit">Reserveren</button>
         </form>

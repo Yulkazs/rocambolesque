@@ -13,11 +13,11 @@ class AdminOverzicht extends BaseController
 
     public function index()
     {
-
-        $test = $this->reserverenModel->getReserveringen();
+        // hier slaan we alle informatie die uit de model komen in een $test 
+        $test = $this->reserverenModel->resKlant();
         // var_dump($test);
         // exit();
-
+        // hier defenieeren we de $test as $reserveringen 
         $rows = "";
         foreach ($test as $reserveringen) {
 
@@ -29,28 +29,37 @@ class AdminOverzicht extends BaseController
             <td>$reserveringen->datum</td>
             <td>$reserveringen->tijd</td>
             <td>$reserveringen->tafel</td>
+            <td>$reserveringen->klantId</td>
+            <td>$reserveringen->voornaam</td>
+            <td>$reserveringen->achternaam</td>
+            <td>$reserveringen->email</td>
+            <td>$reserveringen->telefoon_nummer</td>
+
+
+
+            
+
+
 
             </tr>";
         }
 
         $data = [
-            // 'title' => 'Home',
             'test' => $rows
         ];
-        // $data = [
-        //     'title' => 'Home'
-        // ];
 
+        // die data naar de view sturen
         $this->view('admin/index', $data);
     }
 
 
-    // public function overzichtReserveren()
-    // {
-    //     // hier halen we alle informatie uit de database
+    public function overzichtKlantenGegevens()
+    {
+        // hier halen we alle informatie uit de database
+        $klant = $this->reserverenModel->getklantGegevens();
 
 
-    //     // $this->view('admin/index', $data);
-    //     $this->view('adminOverzicht/index', $data);
-    // }
+        // $this->view('admin/index', $data);
+        $this->view('admin/index');
+    }
 }

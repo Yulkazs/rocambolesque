@@ -11,7 +11,11 @@ class ReserverenModel
 
     public function getklantGegevens()
     {
-        $sql = "SELECT *
+        $sql = "SELECT klantId,
+                       voornaam,
+                       achternaam,
+                       email,
+                       telefoon_nummer
         FROM klant";
 
         $this->db->query($sql);
@@ -29,12 +33,29 @@ class ReserverenModel
         $this->db->query($sql);
         return $this->db->resultSet();
     }
-    public function addReservering($Id)
+    public function resKlant()
     {
-        $sql = "INSERT INTO reserveren (Id,aantal_personen,datum,tijd,tafel)
-        VALUES (:id,:aantal_personen,:datum,:tijd,:tafel)";
+        $sql = "SELECT res.Id,
+                res.aantal_personen,
+                res.datum,
+                res.tijd,
+                res.tafel,
+                kl.klantId,
+                kl.voornaam,
+                kl.achternaam,
+                kl.email,
+                kl.telefoon_nummer
+        FROM reserveren AS res
+        INNER JOIN klant AS kl
+        ON kl.klantId = res.Id";
         $this->db->query($sql);
-        $this->db->bind(':id', $Id);
+        return $this->db->resultSet();
+    }
+    public function addReservering()
+    {
+        $sql = "INSERT INTO reserveren (aantal_personen,datum,tijd,tafel)
+        VALUES (:aantal_personen,:datum,:tijd,:tafel)";
+        $this->db->query($sql);
         $this->db->bind(':aantal_personen', $_POST['aantal_personen']);
         $this->db->bind(':datum', $_POST['datum']);
         $this->db->bind(':tijd', $_POST['tijd']);

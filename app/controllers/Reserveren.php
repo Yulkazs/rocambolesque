@@ -1,6 +1,12 @@
 <?php
 class Reserveren extends BaseController
 {
+    private $ReserverenModel;
+
+    function __construct()
+    {
+        $this->ReserverenModel = $this->model('ReserverenModel');
+    }
     public function index()
     {
         $data = [
@@ -11,7 +17,7 @@ class Reserveren extends BaseController
     }
     public function store()
     {
-        $personen = $_POST["personen"];
-        echo $personen;
+        $this->ReserverenModel->addReservering();
+        // $this->view('Reserveren/adminOverzicht', []);
     }
 }
