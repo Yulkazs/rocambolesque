@@ -51,17 +51,17 @@
         <tr>
             <td><span class="colored">Roca</span>&nbsp;4 Gangen</td>
             <br>
-            <td id="prijs">20,50</td>
+            <td id="prijs"><?php $_SESSION['price']; ?></td>
         </tr>
         <tr>
             <td><span class="colored">Roca</span>&nbsp;6 Gangen</td>
             <br>
-            <td id="prijs">25,50</td>
+            <td id="prijs"><?php $_SESSION['price']; ?></td>
         </tr>
         <tr>
             <td><span class="colored">Roca</span>&nbsp;8 Gangen</td>
             <br>
-            <td id="prijs">30,50</td>
+            <td id="prijs"><?php $_SESSION['price']; ?></td>
         </tr>
     </table>
 </div>
