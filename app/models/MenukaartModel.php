@@ -1,15 +1,7 @@
 <?php
 
-class MenukaartModel
- {
-//     private $db;
-
-//     public function __construct()
-//     {
-//         $this->db = new Database();
-//     };
-
-
+class DishModel
+{
     private $db;
 
     public function __construct($db)
@@ -17,13 +9,15 @@ class MenukaartModel
         $this->db = $db;
     }
 
-    public function addDish($name, $price)
+    public function addDish($name, $price, $season, $cuisine)
     {
-        $query = "INSERT INTO Gerechten (gerecht_name, gerecht_prijs) VALUES (:name, :price)";
+        $query = "INSERT INTO Gerechten (gerecht_name, gerecht_prijs, season, cuisine) VALUES (:name, :price, :season, :cuisine)";
         $stmt = $this->db->prepare($query);
         $stmt->bindParam(':name', $name);
         $stmt->bindParam(':price', $price);
+        $stmt->bindParam(':season', $season);
+        $stmt->bindParam(':cuisine', $cuisine);
         return $stmt->execute();
     }
 }
-
+?>

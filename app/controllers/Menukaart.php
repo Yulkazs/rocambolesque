@@ -17,6 +17,9 @@ class Menukaart extends BaseController
 }
 
 
+
+//require_once 'DishModel.php';
+
 class DishController
 {
     private $model;
@@ -26,9 +29,11 @@ class DishController
         $this->model = $model;
     }
 
-    public function addDish($name, $price)
+    public function addDish($name, $price, $season, $cuisine)
     {
-        return $this->model->addDish($name, $price);
+        return $this->model->addDish($name, $price, $season, $cuisine);
     }
 }
+?>
+
 ?>
