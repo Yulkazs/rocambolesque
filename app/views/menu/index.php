@@ -19,10 +19,10 @@
         <div class="item3-titel-text">MENUKAART VOOR LUNCH EN DINER</div>
         <div class="item7-animation-container">
             <div class="item8-black-notch"></div>
-            <div class="item9-animation-title"> CHEFS BITES</div>
+            <div class="item9-animation-title"> CHEFS HAPJES</div>
             <div class="item10-animation-text">Geniet van chefs borrel bites onder het genot van een heerlijk drankje.</div>
             <div class="item11-green-line"></div>
-            <div class="item12-orange-button"><a href="#" class="open-link">OPEN</a></div>
+            <div class="item12-orange-button"><a href="menukaart" >OPEN</a></div>
             <div class="slideshow-container">
                 <img src="../Images/backgrounds/dish-1.png" class="slideshow-image" alt="Image 1">
             </div>
