@@ -678,7 +678,38 @@ body .item-1-orangestripe {
   line-height: 1.5;
   padding-left: 10px;
   font-size: x-large;
-  color: #DC9A6C;
+  color: #dc6c6c;
+}
+
+/* Media query for screens with maximum width 1392px */
+@media screen and (max-width: 1392px) {
+  .item20-wijn-link {
+    width: 30%; /* Adjust the width for 1392px */
+    left: 20%; /* Adjust the left position */
+    font-size: large; /* Adjust font size */
+    /* Add more specific adjustments as needed */
+  }
+}
+
+/* Responsive styles for 1168px */
+@media screen and (max-width: 1168px) {
+  .item20-wijn-link {
+    width: 45%; /* Adjust the width for 1168px */
+    left: 22%; /* Adjust the left position */
+    font-size: medium; /* Adjust font size */
+    /* Add more specific adjustments as needed */
+  }
+}
+
+/* Responsive styles for 862px */
+@media screen and (max-width: 862px) {
+  .item20-wijn-link {
+    width: 60%; /* Adjust the width for 862px */
+    left: 25%; /* Adjust the left position */
+    font-size: small; /* Adjust font size */
+    color: aqua;
+    /* Add more specific adjustments as needed */
+  }
 }
 
 

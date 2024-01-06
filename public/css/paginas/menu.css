@@ -1009,18 +1009,25 @@ body .item-1-orangestripe {
 .item9-animation-title {
   position: absolute;
   top: 20%;
-  right: 25%;
+  right: 20%;
   font-family: 'Roboto Slab', Arial, sans-serif;
   font-size: xx-large;
   font-weight: 800;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1392px) {
+  .item9-animation-title {
+    top: 80px;
+    right: 15%;
+    font-size: x-large;
+  }
 }
 
 @media (max-width: 768px) {
   .item9-animation-title {
     top: 80px;
-    right: 20%;
-    font-size: x-large;
+    right: 5%;
+    font-size: large;
   }
 }
 
@@ -1028,7 +1035,7 @@ body .item-1-orangestripe {
   .item9-animation-title {
     top: 50px;
     right: 13%;
-    font-size: x-large;
+    font-size: medium;
   }
 }
 
@@ -1077,8 +1084,9 @@ body .item-1-orangestripe {
 
 
 .item11-green-line {
-  border-left: 10px dotted #3FC2A0;
-  height: 30%;
+  border-left: 6px solid #3FC2A0;
+  height: 80%;
+  border-radius: 10px;
   /* Adjust the height as needed */
   display: flex;
   align-items: center;
@@ -1106,7 +1114,7 @@ body .item-1-orangestripe {
   /* Show pointer cursor on hover */
   font-size: 24px;
   /* Adjusted font size */
-  right: 25%;
+  right: 18%;
   left: initial;
   bottom: 10%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -1151,6 +1159,7 @@ body .item-1-orangestripe {
     /* Further adjust font size for smaller screens */
     right: 25%;
     /* Further adjust positioning for smaller screens */
+    bottom: 5%;
   }
 }
 
@@ -1169,12 +1178,12 @@ body .item-1-orangestripe {
 /* Base styles for .slideshow-container */
 .slideshow-container {
   position: absolute;
-  left: 8%;
+  left: 4%;
   max-width: 100%;
   overflow: hidden;
-  width: 300px;
+  width: 30%;
   /* Set container width to match image size */
-  height: 300px;
+  height: 60%;
   /* Set container height to match image size */
 }
 
@@ -1237,7 +1246,7 @@ body .item-1-orangestripe {
 
 /* Default styles for larger screens */
 .item13-menu-container {
-  top: 280%;
+  top:300%;
   /* Change this value to adjust the vertical position */
   left: 50%;
   /* Change this value to adjust the horizontal position */
@@ -1272,52 +1281,52 @@ body .item-1-orangestripe {
 }
 
 /* Media query for screens up to 992px */
+/* Media query for screens with maximum width 1392px */
 @media (max-width: 1392px) {
   .item13-menu-container {
     width: 1000px;
-    height: 900px;
+    max-height: 900px; /* Adjust max-height for this screen size */
     top: 300%;
-    /* Adjust other properties as needed for this screen size */
+    /* Other adjustments for this screen size */
   }
 
-  /* Adjust other styles for item14-bg-dinerkaart and item15-bg-wijnkaart as needed */
+  /* Adjust styles for other elements as needed */
 }
 
-/* Media query for screens up to 768px */
+/* Media query for screens up to 1192px */
 @media (max-width: 1192px) {
   .item13-menu-container {
     width: 900px;
-    height: 800px;
+    max-height: 800px; /* Adjust max-height for this screen size */
     top: 280%;
-
-
-    /* Adjust other properties as needed for this screen size */
+    /* Other adjustments for this screen size */
   }
 
-  /* Adjust other styles for item14-bg-dinerkaart and item15-bg-wijnkaart as needed */
+  /* Adjust styles for other elements as needed */
 }
 
-/* Media query for screens up to 562px */
+/* Media query for screens up to 862px */
 @media (max-width: 862px) {
   .item13-menu-container {
     width: 600px;
-    height: 550px;
-    top: 220%;
-    /* Adjust other properties as needed for this screen size */
+    max-height: 550px; /* Adjust max-height for this screen size */
+    bottom: 0%;
+    /* Other adjustments for this screen size */
   }
 
-  /* Adjust other styles for item14-bg-dinerkaart and item15-bg-wijnkaart as needed */
+  /* Adjust styles for other elements as needed */
 }
 
+/* Media query for screens up to 762px */
 @media (max-width: 762px) {
   .item13-menu-container {
     width: 450px;
-    height: 400px;
-    top: 220%;
+    max-height: 400px; /* Adjust max-height for this screen size */
+    top: 160%;
     border-radius: 20px;
-    /* Adjust other properties as needed for this screen size */
-  }  
-
+    /* Other adjustments for this screen size */
+  }
+  /* Adjust styles for other elements as needed */
 }
 
 /* Base styles for .item16-menukaart-text */
@@ -1533,7 +1542,7 @@ body .item-1-orangestripe {
     bottom: 15%;
     /* Further adjusted position for even smaller screens */
     left: 10%;
-    font-size: large;
+    font-size: x-large;
     /* Further adjusted font size for even smaller screens */
   }
 }
@@ -1624,7 +1633,7 @@ body .item-1-orangestripe {
   .item19-wijnkaart-h1 {
     width: 30%;
     /* Adjust the width for 562px */
-    left: 25%;
+    left: 20%;
     /* Adjust the right position */
     font-size: large;
     /* Adjust font size */
@@ -1648,4 +1657,32 @@ body .item-1-orangestripe {
   padding-left: 10px;
   font-size: x-large;
   color: #DC9A6C;
+}
+
+@media screen and (max-width: 1392px) {
+  .item20-wijn-link {
+    /* Adjust the styles for 1392px max width */
+    width: 40%; /* Example adjustment */
+    right: 2%;
+    font-size: large; /* Example adjustment */
+  }
+}
+
+/* Media Query for maximum width 1168px */
+@media screen and (max-width: 1168px) {
+  .item20-wijn-link {
+    /* Adjust the styles for 1168px max width */
+    width: 45%; /* Example adjustment */
+    right: -3%;
+    font-size: medium; /* Example adjustment */
+  }
+}
+
+/* Media Query for maximum width 862px */
+@media screen and (max-width: 862px) {
+  .item20-wijn-link {
+    /* Adjust the styles for 862px max width */
+    width: 50%; /* Example adjustment */
+    font-size: small; /* Example adjustment */
+  }
 }
