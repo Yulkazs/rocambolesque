@@ -51,17 +51,17 @@
         <tr>
             <td><span class="colored">Roca</span>&nbsp;4 Gangen</td>
             <br>
-            <td id="prijs">20,50</td>
+            <td id="prijs"><?php $_SESSION['price']; ?></td>
         </tr>
         <tr>
             <td><span class="colored">Roca</span>&nbsp;6 Gangen</td>
             <br>
-            <td id="prijs">25,50</td>
+            <td id="prijs"><?php $_SESSION['price']; ?></td>
         </tr>
         <tr>
             <td><span class="colored">Roca</span>&nbsp;8 Gangen</td>
             <br>
-            <td id="prijs">30,50</td>
+            <td id="prijs"><?php $_SESSION['price']; ?></td>
         </tr>
     </table>
 </div>
@@ -72,14 +72,109 @@
 
     <!-- User Menu Kaart -->
     <?php if($authLevel == 1): ?>
+        <div class="user_menu_kaart">
+            <h2>Dinerkaart</h2>
+            <table>
+                <tr>
+                    <td><p><?php $_SESSION['gerecht'] ?></p></td>
+                    <br>
+                    <td>
+                        <p><?php $_SESSION['descNL'] ?></p>
+                        <p><?php $_SESSION['descENG'] ?></p>
+                    </td>
+                    <br>
+                    <td><p><?php $_SESSION['prijs'] ?></p></td>
+                </tr>
+                <tr>
+                    <td><p><?php $_SESSION['gerecht'] ?></p></td>
+                    <br>
+                    <td>
+                        <p><?php $_SESSION['descNL'] ?></p>
+                        <p><?php $_SESSION['descENG'] ?></p>
+                    </td>
+                    <br>
+                    <td><p><?php $_SESSION['prijs'] ?></p></td>
+                </tr>
+                <tr>
+                    <td><p><?php $_SESSION['gerecht'] ?></p></td>
+                    <br>
+                    <td>
+                        <p><?php $_SESSION['descNL'] ?></p>
+                        <p><?php $_SESSION['descENG'] ?></p>
+                    </td>
+                    <br>
+                    <td><p><?php $_SESSION['prijs'] ?></p></td>
+                </tr>
+                <tr>
+                    <td><p><?php $_SESSION['gerecht'] ?></p></td>
+                    <br>
+                    <td>
+                        <p><?php $_SESSION['descNL'] ?></p>
+                        <p><?php $_SESSION['descENG'] ?></p>
+                    </td>
+                    <br>
+                    <td><p><?php $_SESSION['prijs'] ?></p></td>
+                </tr>
+            </table>
+        </div>
 
     <!-- Admin Menu Kaart -->
     <?php elseif($authLevel == 5): ?>
+        <div class="admin_menu_kaart">
+            <h2>Dinerkaart</h2>
+            <!-- form -->
+            <form action="/menukaart" method="POST">
+                <table>
+                    <tr>
+                        <td><input type="text" name="gerecht" placeholder="Gerecht"></td>
+                        <br>
+                        <td>
+                            <input type="text" name="descNL" placeholder="Beschrijving NL">
+                            <input type="text" name="descENG" placeholder="Beschrijving ENG">
+                        </td>
+                        <br>
+                        <td><input type="text" name="prijs" placeholder="Prijs"></td>
+                    <!--</tr>
+                    <tr>
+                        <td><input type="text" name="gerecht" placeholder="Gerecht"></td>
+                        <br>
+                        <td>
+                            <input type="text" name="descNL" placeholder="Beschrijving NL">
+                            <input type="text" name="descENG" placeholder="Beschrijving ENG">
+                        </td>
+                        <br>
+                        <td><input type="text" name="prijs" placeholder="Prijs"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="gerecht" placeholder="Gerecht"></td>
+                        <br>
+                        <td>
+                            <input type="text" name="descNL" placeholder="Beschrijving NL">
+                            <input type="text" name="descENG" placeholder="Beschrijving ENG">
+                        </td>
+                        <br>
+                        <td><input type="text" name="prijs" placeholder="Prijs"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="gerecht" placeholder="Gerecht"></td>
+                        <br>
+                        <td>
+                            <input type="text" name="descNL" placeholder="Beschrijving NL">
+                            <input type="text" name="descENG" placeholder="Beschrijving ENG">
+                        </td>
+                        <br>
+                        <td><input type="text" name="prijs" placeholder="Prijs"></td>
+                    </tr>-->
+                </table>
+                <button type="submit" name="opslaan">Opslaan</button>
+                <button type="submit" name="verwijderen">Verwijderen</button>
+            </form>
+        </div>
 
     <?php endif; ?>
 <?php endif; ?>
 
-
+<!--
 <div class="container_dinerkaart">
     <h2 id="title">Dinerkaart</h2>
     <div class="dinerkaart">
