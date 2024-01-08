@@ -39,7 +39,7 @@
 </div>
 
 <div class="head">
-    <a id="menuLink" href="#">← Ga Terug</a>
+    <a id="menuLink" href="menu">← Ga Terug</a>
     <h1 id="title">Menu</h1>
 </div>
 
