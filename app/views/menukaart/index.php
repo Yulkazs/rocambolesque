@@ -88,8 +88,38 @@
 
 
 
---------------------------------------------------------------------------------------------------------------------------------------
-        <!DOCTYPE html>
+
+
+<?php
+
+//require_once 'Menukaart.php';
+
+$db = new PDO('mysql:host=localhost;dbname=menukaart', 'username', 'password');
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+$model = new DishModel($db);
+$controller = new DishController($model);
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = $_POST['name'];
+    $price = $_POST['price'];
+    $season = $_POST['season'];
+    $cuisine = $_POST['cuisine'];
+
+    // Add validation and sanitation as needed
+
+    $success = $controller->addDish($name, $price, $season, $cuisine);
+
+    if ($success) {
+        echo "Dish added successfully!";
+    } else {
+        echo "Failed to add dish.";
+    }
+} else {
+    include 'menukaart/index.php';
+}
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
