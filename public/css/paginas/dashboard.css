@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@font-face {
+  src: url(../../fonts/Good\ Brush.ttf);
+  font-family: "Good Brush";
+}
+body {
+  background: url(../../Images/backgrounds/restaurant.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(3px);
+  z-index: -1;
+}
+body .trgButton {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto Slab";
+  text-shadow: 1px 1px 4px #000000;
+  font-size: 1rem;
+  position: relative;
+  top: 9rem;
+  left: 25%;
+}
+body .trgButton i {
+  margin-right: 0.5rem;
+}
+body .glass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 11rem;
+  left: 25%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: "Roboto Slab";
+}
+body .glass #creationDate {
+  color: #000000;
+  font-size: 1rem;
+}
+body .glass #edit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+body .glass #edit h2 {
+  color: #D99F6C;
+  text-shadow: 1px 1px 3px #000000;
+  text-align: left;
+}
+body .glass #edit hr {
+  border: 1px solid #D99F6C;
+  width: 100%;
+  margin-top: -1rem;
+}
+body .glass #edit .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body .glass #edit .buttons button {
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #3FC2A0;
+  font-family: "Roboto Slab";
+  text-shadow: 1px 1px 3px #000000;
+  font-size: 1rem;
+  box-shadow: 1px 1px 4px #000000;
+  cursor: pointer;
+}
+body .glass #edit .buttons button:hover {
+  cursor: pointer;
+  background-color: #D99F6C;
+  box-shadow: 1px 1px 4px #000000;
+  transition: ease 0.5s;
+}
+body .glass #pages {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 2rem;
+  box-shadow: 1px 1px 3px #000000;
+}
+body .glass #pages a {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-shadow: 1px 1px 3px #000000;
+}
+body .glass #pages #linkContact {
+  margin-top: 0.5rem;
+}
+body .glass #inbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10rem;
+}
+body .glass #inbox h2 {
+  color: #D99F6C;
+  text-shadow: 1px 1px 3px #000000;
+  text-align: left;
+}
+body .glass #inbox hr {
+  border: 1px solid #D99F6C;
+  width: 100%;
+  margin-top: -1rem;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*# sourceMappingURL=dashboard.css.map */

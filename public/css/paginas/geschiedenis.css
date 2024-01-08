@@ -1,16 +1,13 @@
-/* Reset some default styles */
-body, h1, p {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 /* Header Styles */
 header {
-  background-color: #f0f0f0;
   text-align: center;
   padding: 20px;
 }
@@ -22,11 +19,9 @@ header h1 {
 /* Article Styles */
 article {
   text-align: left;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 article p {
@@ -40,7 +35,7 @@ main {
 }
 
 main img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   display: block;
   margin: 20px auto; /* Add margin for spacing */
@@ -48,11 +43,27 @@ main img {
 
 /* Footer Styles */
 footer {
-  background-color: #f0f0f0;
   text-align: center;
   padding: 20px;
 }
 
-footer h1 {
-  color: #333;
+footer article2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer article2 p {
+  flex: 1;
+  text-align: left;
+  max-width: 50%;
+}
+
+footer article2 img {
+  max-width: 50%;
+  margin-right: 5%;
 }
