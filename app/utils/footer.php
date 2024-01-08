@@ -10,7 +10,7 @@
         <div>
             <h1 class="brown-text">Contact</h1>
             <p>+31 06 123456789</p>
-            <p><a href="/app/views/contact/">Neem Contact op →</a></p>
+            <p><a href="Contact">Neem Contact op →</a></p>
         </div>
 
         <div class="footer-section">
