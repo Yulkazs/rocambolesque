@@ -2,6 +2,7 @@
 
 class Menukaart extends BaseController
 {
+    
     public function index()
     {
 
@@ -12,7 +13,5 @@ class Menukaart extends BaseController
         $this->view('Menukaart/index', $data);
     }
 }
-
-   
 
 

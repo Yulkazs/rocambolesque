@@ -51,17 +51,17 @@
         <tr>
             <td><span class="colored">Roca</span>&nbsp;4 Gangen</td>
             <br>
-            <td id="prijs">20,50</td>
+            <td id="prijs"><?php $_SESSION['price']; ?></td>
         </tr>
         <tr>
             <td><span class="colored">Roca</span>&nbsp;6 Gangen</td>
             <br>
-            <td id="prijs">25,50</td>
+            <td id="prijs"><?php $_SESSION['price']; ?></td>
         </tr>
         <tr>
             <td><span class="colored">Roca</span>&nbsp;8 Gangen</td>
             <br>
-            <td id="prijs">30,50</td>
+            <td id="prijs"><?php $_SESSION['price']; ?></td>
         </tr>
     </table>
 </div>
@@ -134,7 +134,7 @@
                         </td>
                         <br>
                         <td><input type="text" name="prijs" placeholder="Prijs"></td>
-                    </tr>
+                    <!--</tr>
                     <tr>
                         <td><input type="text" name="gerecht" placeholder="Gerecht"></td>
                         <br>
@@ -164,9 +164,11 @@
                         </td>
                         <br>
                         <td><input type="text" name="prijs" placeholder="Prijs"></td>
-                    </tr>
+                    </tr>-->
                 </table>
-                <button type="submit" name="submit">Opslaan</button>
+                <button type="submit" name="opslaan">Opslaan</button>
+                <button type="submit" name="verwijderen">Verwijderen</button>
+            </form>
         </div>
 
     <?php endif; ?>
