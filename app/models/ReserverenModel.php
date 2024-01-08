@@ -63,4 +63,19 @@ class ReserverenModel
 
         return $this->db->resultSet();
     }
+    public function updatereservaties()
+    {
+        $sql = "UPDATE reserveren
+        SET aantal_personen = :aantal_personen,
+        datum = :datum,
+        tijd = :tijd
+        tafel = :tafel
+        WHERE Id = Id";
+        $this->db->query($sql);
+        $this->db->bind(':aantal_personen', $_POST['aantal_personen']);
+        $this->db->bind(':datum', $_POST['datum']);
+        $this->db->bind(':tijd', $_POST['tijd']);
+        $this->db->bind(':tafel', $_POST['tafel']);
+        return $this->db->resultSet();
+    }
 }

@@ -75,7 +75,7 @@ session_start();
                 </select>
             </div>
             <div class="form-group">
-                <input type="number" id="id" name="id" min="1" max="50" required hidden>
+                <input type="number" id="id" name="id" min="1" max="50" required hidden value="">
             </div>
             <div class="form-group">
                 <label for="voornaam">Voornaam:</label>
