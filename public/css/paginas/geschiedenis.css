@@ -1,340 +1,69 @@
 body {
-  /* Slideshow container */
-  /* Hide the images by default */
-  /* Next & previous buttons */
-  /* Position the "next button" to the right */
-  /* On hover, add a black background color with a little bit see-through */
-  /* Caption text */
-  /* Number text (1/3 etc) */
-  /* The dots/bullets/indicators */
-  /* Fading animation */
-  /* Add this CSS to set a fixed width and height for the images */
-  /* Style for smaller screens (e.g., mobile phones) */
-  /* Style for smaller screens (e.g., mobile phones) */
-}
-body .banner img {
-  width: 100.15%;
-  height: 100%;
-  position: absolute;
-  left: -0.2rem;
-  top: -18rem;
-  z-index: -1;
-}
-body .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-body .wrapper .container {
-  text-align: center;
-  width: 80%;
-  height: 150%;
-  font-family: "Poppins", sans-serif;
-}
-body .wrapper1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin-top: -860px;
-}
-body .wrapper1 .container1 {
-  text-align: center;
-  width: 80%;
-  height: 150%;
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-}
-body .wrapper1 p {
-  background-color: bisque;
-  padding: 140px;
-  font-size: 20px;
-}
-body * {
-  box-sizing: border-box;
-}
-body .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: -600px auto 0;
-  z-index: 3;
-}
-body .mySlides {
-  display: none;
-}
-body .prev {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-body .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-body .prev:hover, body .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-body .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-body .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-body .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-body .active, body .dot:hover {
-  background-color: #717171;
-}
-body .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-body .image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  /* Adjust the height as needed */
-}
-body .image p {
-  background-color: bisque;
-  padding: 130px;
-}
-body .image-container {
-  display: flex;
-  align-items: center;
-}
-body img.demo {
-  max-width: 45%;
-  /* Adjust the width of the image as needed */
-  height: auto;
-}
-body .text1 {
-  padding: 20px;
-}
-body .text1 p {
-  font-size: 20px;
-  line-height: 1.6;
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 15px;
-}
-body .slide-image {
-  width: 100%; /* Set the width to 100% to make the images responsive */
-  height: 700px;
-  margin-top: 300px; /* Set the desired height for all images */
-}
-body footer {
-  background-color: #ffffff;
-  color: black;
-  padding: 20px;
+  padding: 0;
+  box-sizing: border-box;
   text-align: center;
 }
-body .footer-section {
-  margin: 0 20px;
-  display: inline-block;
-  vertical-align: top; /* Align sections at the top */
-}
-body h2 {
-  font-size: 20px;
-  color: #A55F3E;
-  font-family: "Poppins", sans-serif;
-}
-body p {
-  font-size: 16px;
-  margin: 0; /* Remove margin to ensure consistent height */
-  padding: 10px 0; /* Add padding to control the height */
-  font-family: "Poppins", sans-serif;
-}
-@media only screen and (max-width: 992px) {
-  body .banner img {
-    width: 100%;
-    height: auto;
-  }
-  body .wrapper, body .wrapper1 {
-    padding: 40px;
-    text-align: left;
-  }
-  body .container {
-    text-align: center;
-  }
-  body .container h1 {
-    font-size: 36px;
-    margin-top: -40px; /* Adjusted margin */
-  }
-  body .container1 {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  body .container1 p {
-    font-size: 20px;
-    background-color: bisque;
-  }
-  body .slideshow-container {
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    height: 1300px; /* Changed to auto for responsive height */
-  }
-  body .image-container {
-    flex-direction: column;
-  }
-  body .image-container img {
-    max-width: 100%;
-    margin-bottom: 20px; /* Adjusted margin */
-  }
-  body .text1 {
-    text-align: center;
-  }
-  body .text1 p {
-    margin-bottom: 20px; /* Adjusted margin */
-  }
-}
-@media screen and (max-width: 768px) {
-  body .banner img {
-    width: 100%;
-    height: auto;
-  }
-  body .wrapper, body .wrapper1 {
-    padding: 40px;
-    text-align: left;
-  }
-  body .container {
-    text-align: center; /* Center-align the content */
-  }
-  body .container h1 {
-    font-size: 36px; /* Adjust the font size as needed for larger screens */
-    margin-top: -40px; /* Add some top margin to separate it from other content */
-  }
-  body .container1 {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  body .container1 p {
-    font-size: 14px;
-    background-color: bisque;
-  }
-  body .slideshow-container {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: -250px; /* Adjust this value as needed */
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-  }
-  body .image-container {
-    flex-direction: column;
-  }
-  body .image-container img {
-    max-width: 100%;
-    margin-top: -300px;
-  }
-  body .text1 {
-    text-align: center;
-  }
-  body .text1 p {
-    margin-bottom: -900px;
-  }
-}
-@media screen and (max-width: 562px) {
-  body .banner img {
-    width: 100%;
-    height: auto;
-  }
-  body .wrapper, body .wrapper1 {
-    padding: 40px;
-    text-align: left;
-  }
-  body .container {
-    text-align: center; /* Center-align the content */
-  }
-  body .container h1 {
-    font-size: 36px; /* Adjust the font size as needed for larger screens */
-    margin-top: -40px; /* Add some top margin to separate it from other content */
-  }
-  body .container1 {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  body .container1 p {
-    font-size: 20px;
-    background-color: bisque;
-    position: relative;
-    z-index: 1;
-    line-height: 0.8;
-  }
-  body .slideshow-container {
-    max-width: 800px;
-    margin: 0 auto;
-    margin-top: -250px; /* Adjust this value as needed */
-    overflow: hidden;
-    position: relative;
-    height: 100%;
-  }
-  body .image-container {
-    flex-direction: column;
-  }
-  body .image-container img {
-    max-width: 100%;
-    margin-bottom: -450px;
-  }
-  body .text1 {
-    text-align: center;
-  }
-  body .text1 p {
-    margin-bottom: -800px;
-  }
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px;
 }
 
-/* Style for larger screens (e.g., tablets and desktops) */
+header h1 {
+  color: #333;
+}
 
-/*# sourceMappingURL=geschiedenis.css.map */
+/* Article Styles */
+article {
+  text-align: left;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+article p {
+  line-height: 1.6;
+}
+
+/* Main Styles */
+main {
+  text-align: center;
+  padding: 20px;
+}
+
+main img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Add margin for spacing */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer article2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer article2 p {
+  flex: 1;
+  text-align: left;
+  max-width: 50%;
+}
+
+footer article2 img {
+  max-width: 50%;
+  margin-right: 5%;
+}
