@@ -1,12 +1,12 @@
 <?php
 
-class DishModel
+class MenukaartModel
 {
     private $db;
 
-    public function __construct($db)
+    public function __construct($db = null)
     {
-        $this->db = $db;
+        $this->db = new Database();
     }
 
     public function addDish($name, $price, $season, $cuisine)
@@ -20,4 +20,5 @@ class DishModel
         return $stmt->execute();
     }
 }
+
 ?>

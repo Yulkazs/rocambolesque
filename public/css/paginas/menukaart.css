@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@font-face {
+  src: url(../../fonts/Good\ Brush.ttf);
+  font-family: "Good Brush";
+}
+body {
+  width: 100%;
+}
+body .svg-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .svg-top .svg-left svg {
+  margin-top: -30%;
+  margin-left: -8%;
+}
+body .svg-top .svg-right svg {
+  margin-right: -5%;
+}
+body .head #title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-top: -1%;
+  margin-left: 46%;
+  color: #D99F6C;
+  font-family: "Good Brush";
+}
+body .head #menuLink {
+  display: flex;
+  margin-left: 5%;
+  margin-top: -3%;
+  text-decoration: none;
+  color: #D99F6C;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Roboto Slab";
+}
+body .container_chefbites {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Slab";
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size: 1.5rem;
+}
+body .container_chefbites #title {
+  text-transform: uppercase;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px #000000;
+}
+body .container_chefbites #desc-eng {
+  color: #a6a6a6;
+}
+body .container_chefbites .table_chefbites {
+  display: flex;
+  justify-content: space-between;
+}
+body .container_chefbites .table_chefbites tr {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body .container_chefbites .table_chefbites tr #prijs {
+  font-weight: 700;
+  margin-left: 15rem;
+}
+body .container_chefbites .table_chefbites .colored {
+  color: #3FC2A0;
+}
+
+/*# sourceMappingURL=menukaart.css.map */

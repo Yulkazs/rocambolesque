@@ -1,39 +1,29 @@
-
 <?php
-//require_once 'MenukaartModel';
-
-
 
 class Menukaart extends BaseController
 {
+
+    private $MenukaartModel;
+
+    function __construct()
+    {
+        $this->MenukaartModel = $this->model('MenukaartModel');
+    }
+    
     public function index()
     {
+
         $data = [
             'title' => 'Home'
         ];
     
         $this->view('Menukaart/index', $data);
     }
-}
 
-
-
-//require_once 'DishModel.php';
-
-class DishController
-{
-    private $model;
-
-    public function __construct($model)
+    public function dish()
     {
-        $this->model = $model;
-    }
-
-    public function addDish($name, $price, $season, $cuisine)
-    {
-        return $this->model->addDish($name, $price, $season, $cuisine);
+        $this->MenukaartModel->addDish();
     }
 }
-?>
 
 

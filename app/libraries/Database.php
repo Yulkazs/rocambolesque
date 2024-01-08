@@ -1,40 +1,43 @@
 <?php
 
-class database
+class Database
 {
-    private $dbHost = DB_HOST;
-    private $dbUser = DB_USER;
-    private $dbPass = DB_PASS;
-    private $dbName = DB_NAME;
     private $dbHandler;
     private $statement;
 
-
-
     public function __construct()
     {
-        $conn = 'mysql:host=' . $this->dbHost . ';dbname=' . $this->dbName . ";charset=UTF8";
-
-        try {
-            $this->dbHandler = new PDO($conn, $this->dbUser, $this->dbPass);
-        } catch(PDOException $e) {
-            echo $e->getMessage();
-        }
+        $conn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=UTF8';
+        $this->dbHandler = new PDO($conn, DB_USER, DB_PASS);
     }
+
+
 
     public function query($sql)
     {
         $this->statement = $this->dbHandler->prepare($sql);
     }
 
+     public function bind($parameter, $value)
+    {
+        $this->statement->bindValue($parameter, $value);
+    }
+
+
     public function execute()
     {
-        return $this->statement->execute();
+        $this->statement->execute();
+    }
+
+    public function result()
+    {
+        $this->statement->execute();
+        return $this->statement->fetch(PDO::FETCH_OBJ);
     }
 
     public function resultSet()
     {
-        $this->execute();
+        $this->statement->execute();
         return $this->statement->fetchAll(PDO::FETCH_OBJ);
     }
 }
