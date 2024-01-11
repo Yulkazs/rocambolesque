@@ -10,23 +10,8 @@
 </head>
 
 <body>
-    <?php
-    // var_dump($data);
-    $tags = [
-        '<link rel="stylesheet" href="/public/css/index.css">',
-    ];
-    $header = [
-        'tags' => $tags,
-        'nav' => true
-    ];
+    <h1>Admin</h1>
 
-
-    $this->utils('header', $header);
-    ?>
-    <div class="reserveren-banner">
-        <img src="/public/Images/backgrounds/bg-dashboard.png" alt="Reserveren"><br>
-    </div>
-    <br><br>
     <table class="table">
         <thead>
             <tr>
@@ -67,7 +52,6 @@
         </tbody>
     </table>
 
-    <?php $this->utils('footer', []); ?>
 
 </body>
 
