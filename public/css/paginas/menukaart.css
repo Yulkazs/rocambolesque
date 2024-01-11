@@ -68,5 +68,32 @@ body .container_chefbites .table_chefbites tr #prijs {
 body .container_chefbites .table_chefbites .colored {
   color: #3FC2A0;
 }
+body .container_Dinerkaart {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Slab";
+  margin-top: 10%;
+  margin-left: 5%;
+  font-size: 1.5rem;
+}
+body .container_Dinerkaart #title {
+  text-transform: uppercase;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px #000000;
+}
+body .container_Dinerkaart #desc-eng {
+  color: #a6a6a6;
+}
+body .container_Dinerkaart #pcs {
+  color: #D99F6C;
+  position: absolute;
+  margin-right: 30px;
+  right: 10%;
+}
+body .container_Dinerkaart .table_dinerkaart #sushi-name {
+  text-transform: uppercase;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px #000000;
+}
 
 /*# sourceMappingURL=menukaart.css.map */

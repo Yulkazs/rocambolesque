@@ -51,17 +51,44 @@
         <tr>
             <td><span class="colored">Roca</span>&nbsp;4 Gangen</td>
             <br>
-            <td id="prijs"><?php $_SESSION['price']; ?></td>
+            <td id="prijs"><?php // $_SESSION['price']; ?></td>
         </tr>
         <tr>
             <td><span class="colored">Roca</span>&nbsp;6 Gangen</td>
             <br>
-            <td id="prijs"><?php $_SESSION['price']; ?></td>
+            <td id="prijs"><?php // $_SESSION['price']; ?></td>
         </tr>
         <tr>
             <td><span class="colored">Roca</span>&nbsp;8 Gangen</td>
             <br>
-            <td id="prijs"><?php $_SESSION['price']; ?></td>
+            <td id="prijs"><?php // $_SESSION['price']; ?></td>
+        </tr>
+    </table>
+</div>
+<div class="container_Dinerkaart">
+    <h2 id="title">DINER KAART</h2>
+    <p id="pcs">(4st/4pcs)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(8st/8pcs)</p>
+    <table class="table_dinerkaart">
+        <tr>
+        <p id="sushi-name">Red Dragon Maki</p>
+        <p id="desc-nl">King crab en pittige tonijn </p>
+        <p id="desc-eng">King crab and spicy tuna</p>
+        </tr>
+        <tr>
+        <p id="sushi-name">Unagi Maki </p>
+        <p id="desc-nl">Paling, komkommer en avocado </p>
+        <p id="desc-eng">Eel, cucumber and avocado</p>
+
+        </tr>
+        <tr>
+        <p id="sushi-name">Carpaccio Maki </p>
+        <p id="desc-nl">Dungesneden entrecôte en truffelsalsa </p>
+        <p id="desc-eng">Thin sliced sirloin and truffle salsa</p>
+        </tr>
+        <tr>
+        <p id="sushi-name">Wagyu Maki</p>
+        <p id="desc-nl">Geflambeerde wagyu beef A5 </p>
+        <p id="desc-eng">Flambéed wagyu beef A5</p>
         </tr>
     </table>
 </div>

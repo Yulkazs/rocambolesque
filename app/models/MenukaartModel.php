@@ -4,7 +4,7 @@ class MenukaartModel
 {
     private $db;
 
-    public function __construct($db)
+    public function __construct()
     {
         $this->db = new Database();
     }
