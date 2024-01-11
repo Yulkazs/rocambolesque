@@ -10,8 +10,23 @@
 </head>
 
 <body>
-    <h1>Admin</h1>
+    <?php
+    // var_dump($data);
+    $tags = [
+        '<link rel="stylesheet" href="/public/css/index.css">',
+    ];
+    $header = [
+        'tags' => $tags,
+        'nav' => true
+    ];
 
+
+    $this->utils('header', $header);
+    ?>
+    <div class="reserveren-banner">
+        <img src="/public/Images/backgrounds/bg-dashboard.png" alt="Reserveren"><br>
+    </div>
+    <br><br>
     <table class="table">
         <thead>
             <tr>
@@ -44,7 +59,7 @@
                 echo '<td>' . $reservering->email . '</td>';
                 echo '<td>' . $reservering->telefoon_nummer . '</td>';
                 echo '<td>' .  '<a href="AdminOverzicht/showEdit/' . $reservering->Id . '"><i class="bi bi-pencil-square"></i></a>' . '</td>';
-                echo '<td>' .  '<a href="../Admin/updateReservation"><i class="bi bi-trash3"></i></a>' . '</td>';
+                echo '<td>' .  '<a href="AdminOverzicht/deletereservering/' . $reservering->Id . '"><i class="bi bi-trash3"></i></a>' . '</td>';
             }
             ?>
 
@@ -52,6 +67,7 @@
         </tbody>
     </table>
 
+    <?php $this->utils('footer', []); ?>
 
 </body>
 

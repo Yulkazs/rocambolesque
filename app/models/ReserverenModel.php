@@ -70,17 +70,18 @@ class ReserverenModel
         $this->db->query($sql);
         return $this->db->resultSet();
     }
-    public function addReservering()
+    public function addReservering($Id)
     {
-        $sql = "INSERT INTO reserveren (aantal_personen,datum,tijd,tafel)
+        $sql = "INSERT INTO reserveren (Id,aantal_personen,datum,tijd,tafel)
         VALUES (:aantal_personen,:datum,:tijd,:tafel)";
         $this->db->query($sql);
         $this->db->bind(':aantal_personen', $_POST['aantal_personen']);
         $this->db->bind(':datum', $_POST['datum']);
         $this->db->bind(':tijd', $_POST['tijd']);
         $this->db->bind(':tafel', $_POST['tafel']);
+        $this->db->bind(':id', $Id);
 
-        return $this->db->resultSet();
+        return $this->db->execute();
     }
     public function updatereservaties()
     {
@@ -97,5 +98,11 @@ class ReserverenModel
         $this->db->bind(':tijd', $_POST['tijd']);
         $this->db->bind(':tafel', $_POST['tafel']);
         return $this->db->resultSet();
+    }
+    public function deletereservering($Id)
+    {
+        $sql = "DELETE FROM reserveren WHERE Id = $Id";
+        $this->db->query($sql);
+        $this->db->execute();
     }
 }

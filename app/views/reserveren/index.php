@@ -20,13 +20,13 @@ session_start();
     $tags = [
         '<link rel="stylesheet" href="/public/css/index.css">',
     ];
-    $data = [
+    $header = [
         'tags' => $tags,
         'nav' => true
     ];
 
 
-    $this->utils('header', $data);
+    $this->utils('header', $header);
     ?>
     <div class="reserveren-banner">
         <img src="/public/Images/backgrounds//reserveren.png" alt="Reserveren"><br>
@@ -52,7 +52,8 @@ session_start();
             unset($_SESSION['message']);
             ?>
         <?php endif; ?>
-        <form action="reserveren/store" method="post">
+        <form action="<?= URLROOT ?>reserveren/store/" method="post">
+            <!-- <?= $data->Id  ?>" -->
             <div class="form-group">
                 <label for="aantal_personen">Aantal personen:</label>
                 <input type="number" id="aantal_personen" name="aantal_personen" min="1" max="50" required>
@@ -75,7 +76,7 @@ session_start();
                 </select>
             </div>
             <div class="form-group">
-                <input type="number" id="id" name="id" min="1" max="50" required hidden>
+                <input type="number" id="id" name="id" min="1" max="50" hidden>
             </div>
             <div class="form-group">
                 <label for="voornaam">Voornaam:</label>

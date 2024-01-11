@@ -51,4 +51,15 @@ class AdminOverzicht extends BaseController
         $this->ReserverenModel->updatereservaties($Id);
         header('Refresh:0; url=/AdminOverzicht');
     }
+    public function deletereservering($Id)
+    {
+        $succes = $this->ReserverenModel->deletereservering($Id);
+        header('Refresh:3; url=/AdminOverzicht/');
+
+        if ($succes) {
+            echo "Het geselecteerde reservering is verwijderd";
+        } else {
+            echo "Het is niet gelukt";
+        }
+    }
 }
