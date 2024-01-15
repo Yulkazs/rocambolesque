@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 @font-face {
-  src: url(/public/css/fonts/Good\ Brush.ttf);
+  src: url(../../fonts/Good\ Brush.ttf);
   font-family: "Good Brush";
 }
 .banner {
@@ -36,6 +36,7 @@
   z-index: 1;
   position: absolute;
   width: 70%;
+  margin-top: 8rem;
 }
 .banner .buttons a {
   text-decoration: none;

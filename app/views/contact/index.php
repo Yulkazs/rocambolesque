@@ -5,22 +5,22 @@
 
 <!-- Header -->
 <?php
-    $tags = [
-        '<link rel="stylesheet" href="/public/css/index.css">',
-    ];
-    $data = [
-        'tags' => $tags,
-        'nav' => true
-    ];
+$tags = [
+	'<link rel="stylesheet" href="/public/css/index.css">',
+];
+$data = [
+	'tags' => $tags,
+	'nav' => true
+];
 
 
-    $this->utils('header', $data);
+$this->utils('header', $data);
 
 ?>
 
 <!-- Banner -->
 <div class="bannerContact">
-	<img  class="banner-img" src="public/Images/backgrounds/bg-contact.png" alt="Banner">
+	<img class="banner-img" src="public/Images/backgrounds/bg-contact.png" alt="Banner">
 	<h1>Contact</h1>
 </div>
 
@@ -48,7 +48,7 @@
 
 <!-- Map -->
 <div class="row">
-<h1 class="title">Kijk waar we zijn!</h1>
+	<h1 class="title">Kijk waar we zijn!</h1>
 	<div class="col">
 		<div id="map"></div>
 	</div>
@@ -56,7 +56,7 @@
 
 <!-- Script and api script -->
 <script src="public/JS/contact.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXFAxSgXP7b5D25WEtjxkYqoWM2PjxaLg&callback=initMap&libraries=places"async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXFAxSgXP7b5D25WEtjxkYqoWM2PjxaLg&callback=initMap&libraries=places" async defer></script>
 
 <script>
 	// Validate Email
@@ -76,4 +76,3 @@
 		}
 	});
 </script>
-
