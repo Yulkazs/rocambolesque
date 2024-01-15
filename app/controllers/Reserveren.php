@@ -19,6 +19,8 @@ class Reserveren extends BaseController
     {
         echo "hoi";
         $this->ReserverenModel->addReservering($Id);
-        // header('Refresh:3; url=/AdminOverzicht');
+        header('Refresh:3; url=/Reserveren/index');
+        // $this->view('/index');
+
     }
 }
