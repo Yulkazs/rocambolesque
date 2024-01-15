@@ -10,6 +10,7 @@
     <title>Rocambolesque ®</title>
 </head>
 <body>
+
 <img src="../../../public/Images/backgrounds/gesimg3.jpg" alt="Article 1 Image Description">
     <header>
         <h1>Geschiedenis</h1>
@@ -40,8 +41,6 @@
             </p>
         </article>
     </footer>
-
-
 
 
 </body>
