@@ -70,16 +70,23 @@ class ReserverenModel
         $this->db->query($sql);
         return $this->db->resultSet();
     }
-    public function addReservering($Id)
+    public function addReservering()
     {
-        $sql = "INSERT INTO reserveren (Id,aantal_personen,datum,tijd,tafel)
+        $sql = "INSERT INTO reserveren (aantal_personen,datum,tijd,tafel)
         VALUES (:aantal_personen,:datum,:tijd,:tafel)";
         $this->db->query($sql);
         $this->db->bind(':aantal_personen', $_POST['aantal_personen']);
         $this->db->bind(':datum', $_POST['datum']);
         $this->db->bind(':tijd', $_POST['tijd']);
         $this->db->bind(':tafel', $_POST['tafel']);
-        $this->db->bind(':id', $Id);
+
+        $sql = "INSERT INTO klant (voornaam,achternaam,email,telefoon_nummer)
+        VALUES (:voornaam,:achternaam,:email,:telefoon_nummer)";
+        $this->db->query($sql);
+        $this->db->bind(':voornaam', $_POST['voornaam']);
+        $this->db->bind(':achternaam', $_POST['achternaam']);
+        $this->db->bind(':email', $_POST['email']);
+        $this->db->bind(':telefoon_nummer', $_POST['tel']);
 
         return $this->db->execute();
     }

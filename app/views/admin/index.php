@@ -33,7 +33,7 @@
         </thead>
         <tbody>
             <?php foreach ($data as $reservering) {
-                echo '<td>' . $reservering->Id . '</td>';
+                echo '<tr><td>' . $reservering->Id . '</td>';
                 echo '<td>' . $reservering->aantal_personen . '</td>';
                 echo '<td>' . $reservering->datum . '</td>';
                 echo '<td>' . $reservering->tijd . '</td>';
@@ -44,7 +44,8 @@
                 echo '<td>' . $reservering->email . '</td>';
                 echo '<td>' . $reservering->telefoon_nummer . '</td>';
                 echo '<td>' .  '<a href="AdminOverzicht/showEdit/' . $reservering->Id . '"><i class="bi bi-pencil-square"></i></a>' . '</td>';
-                echo '<td>' .  '<a href="AdminOverzicht/deletereservering/' . $reservering->Id . '"><i class="bi bi-trash3"></i></a>' . '</td>';
+                echo '<td>' .  '<a href="AdminOverzicht/deletereservering/' . $reservering->Id . '"><i class="bi bi-trash3"></i></a>' . '</td>
+                </tr>';
             }
             ?>
 

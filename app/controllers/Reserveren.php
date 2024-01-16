@@ -15,12 +15,12 @@ class Reserveren extends BaseController
 
         $this->view('Reserveren/index', $data);
     }
-    public function store($Id)
+    public function store()
     {
         echo "hoi";
-        $this->ReserverenModel->addReservering($Id);
-        header('Refresh:3; url=/Reserveren/index');
-        // $this->view('/index');
 
+        $this->ReserverenModel->addReservering();
+        $this->view('Reserveren/result');
+        header('Refresh:2; url=/Reserveren/index');
     }
 }

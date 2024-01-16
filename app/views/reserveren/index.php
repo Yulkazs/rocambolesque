@@ -53,7 +53,6 @@ session_start();
             ?>
         <?php endif; ?>
         <form action="<?= URLROOT ?>reserveren/store/" method="post">
-            <!-- <?= $data->Id  ?>" -->
             <div class="form-group">
                 <label for="aantal_personen">Aantal personen:</label>
                 <input type="number" id="aantal_personen" name="aantal_personen" min="1" max="50" required>
