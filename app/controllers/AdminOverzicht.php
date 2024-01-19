@@ -60,6 +60,6 @@ class AdminOverzicht extends BaseController
         } else {
             echo "Het geselecteerde reservering is verwijderd";
         }
-        header('Refresh:3; url=/AdminOverzicht/');
+        header('Refresh:3; url=/AdminOverzicht');
     }
 }

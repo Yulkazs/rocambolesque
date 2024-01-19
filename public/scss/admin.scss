@@ -8,21 +8,19 @@
 body {
     font-family: Arial, sans-serif;
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     margin: 0;
-}
 
-table {
-    border: 2px solid gray;
-    border-collapse: collapse;
-    margin-top: 1em;
-    text-align: left;
-    flex-direction: column;
-}
+    table {
+        border: 2px solid gray;
+        border-collapse: collapse;
+        margin-top: 10rem;
+        text-align: left;
+        flex-direction: column;
+    }
 
-th,
-td {
-    border: 2px solid gray;
-    padding: .6em;
+    th,
+    td {
+        border: 2px solid gray;
+        padding: .6em;
+    }
 }

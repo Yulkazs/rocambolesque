@@ -10,49 +10,63 @@
 </head>
 
 <body>
-    <h1>Admin</h1>
+    <?php
+    $tags = [
+        '<link rel="stylesheet" href="/public/css/index.css">',
+    ];
+    $header = [
+        'tags' => $tags,
+        'nav' => true
+    ];
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Aantal personen</th>
-                <th>Datum</th>
-                <th>Tijd</th>
-                <th>Tafel</th>
-                <th>Klant Id</th>
-                <th>Voornaam</th>
-                <th>Achternaam</th>
-                <th>E-mail</th>
-                <th>Telefoonnummer</th>
-                <th>Aanpassen</th>
-                <th>Verwijderen</th>
-                <!-- <th>Klant Gegevens</th> -->
 
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($data as $reservering) {
-                echo '<tr><td>' . $reservering->Id . '</td>';
-                echo '<td>' . $reservering->aantal_personen . '</td>';
-                echo '<td>' . $reservering->datum . '</td>';
-                echo '<td>' . $reservering->tijd . '</td>';
-                echo '<td>' . $reservering->tafel . '</td>';
-                echo '<td>' . $reservering->klantId . '</td>';
-                echo '<td>' . $reservering->voornaam . '</td>';
-                echo '<td>' . $reservering->achternaam . '</td>';
-                echo '<td>' . $reservering->email . '</td>';
-                echo '<td>' . $reservering->telefoon_nummer . '</td>';
-                echo '<td>' .  '<a href="AdminOverzicht/showEdit/' . $reservering->Id . '"><i class="bi bi-pencil-square"></i></a>' . '</td>';
-                echo '<td>' .  '<a href="AdminOverzicht/deletereservering/' . $reservering->Id . '"><i class="bi bi-trash3"></i></a>' . '</td>
+    $this->utils('header', $header);
+
+    ?>
+    <div class="form">
+        <h1>Admin</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Aantal personen</th>
+                    <th>Datum</th>
+                    <th>Tijd</th>
+                    <th>Tafel</th>
+                    <th>Klant Id</th>
+                    <th>Voornaam</th>
+                    <th>Achternaam</th>
+                    <th>E-mail</th>
+                    <th>Telefoonnummer</th>
+                    <th>Aanpassen</th>
+                    <th>Verwijderen</th>
+                    <!-- <th>Klant Gegevens</th> -->
+
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($data as $reservering) {
+                    echo '<tr><td>' . $reservering->Id . '</td>';
+                    echo '<td>' . $reservering->aantal_personen . '</td>';
+                    echo '<td>' . $reservering->datum . '</td>';
+                    echo '<td>' . $reservering->tijd . '</td>';
+                    echo '<td>' . $reservering->tafel . '</td>';
+                    echo '<td>' . $reservering->klantId . '</td>';
+                    echo '<td>' . $reservering->voornaam . '</td>';
+                    echo '<td>' . $reservering->achternaam . '</td>';
+                    echo '<td>' . $reservering->email . '</td>';
+                    echo '<td>' . $reservering->telefoon_nummer . '</td>';
+                    echo '<td>' .  '<a href="AdminOverzicht/showEdit/' . $reservering->Id . '"><i class="bi bi-pencil-square"></i></a>' . '</td>';
+                    echo '<td>' .  '<a href="AdminOverzicht/deletereservering/' . $reservering->Id . '"><i class="bi bi-trash3"></i></a>' . '</td>
                 </tr>';
-            }
-            ?>
+                }
+                ?>
 
 
-        </tbody>
-    </table>
-
+            </tbody>
+        </table>
+    </div>
 
 </body>
 
