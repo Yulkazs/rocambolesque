@@ -79,6 +79,7 @@ class ReserverenModel
         $this->db->bind(':datum', $_POST['datum']);
         $this->db->bind(':tijd', $_POST['tijd']);
         $this->db->bind(':tafel', $_POST['tafel']);
+        $this->db->execute();
 
         $sql = "INSERT INTO klant (voornaam,achternaam,email,telefoon_nummer)
         VALUES (:voornaam,:achternaam,:email,:telefoon_nummer)";

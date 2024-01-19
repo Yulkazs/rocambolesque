@@ -10,19 +10,6 @@
 </head>
 
 <body>
-    <?php
-    $tags = [
-        '<link rel="stylesheet" href="/public/css/index.css">',
-    ];
-    $header = [
-        'tags' => $tags,
-        'nav' => true
-    ];
-
-
-    $this->utils('header', $header);
-
-    ?>
     <div class="form">
         <h1>Admin</h1>
 
