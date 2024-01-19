@@ -12,8 +12,21 @@
 </head>
 
 <body>
+    <?php
+    $tags = [
+        '<link rel="stylesheet" href="/public/css/index.css">',
+    ];
+    $data = [
+        'tags' => $tags,
+        'nav' => true
+    ];
 
-<img src="../../../public/Images/backgrounds/gesimg3.jpg" alt="Article 1 Image Description">
+
+    $this->utils('header', $data);
+
+    ?>
+
+    <img src="../../../public/Images/backgrounds/gesimg3.jpg" alt="Article 1 Image Description">
     <header>
         <h1>Geschiedenis</h1>
         <article>
@@ -45,7 +58,7 @@
             </article>
     </footer>
 
-
+    <?php $this->utils('footer', []); ?>
 </body>
 
 </html>
