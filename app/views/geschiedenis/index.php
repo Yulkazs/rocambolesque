@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <img src="../../../public/Images/backgrounds/gesimg3.jpg" alt="Article 1 Image Description">
+
+<img src="../../../public/Images/backgrounds/gesimg3.jpg" alt="Article 1 Image Description">
     <header>
         <h1>Geschiedenis</h1>
         <article>
@@ -43,7 +44,6 @@
             </p>
             </article>
     </footer>
-
 
 
 </body>
