@@ -17,6 +17,7 @@ session_start();
 
 <body>
     <?php
+    // var_dump($data);
     $tags = [
         '<link rel="stylesheet" href="/public/css/index.css">',
     ];
@@ -35,7 +36,7 @@ session_start();
 
 
 
-    <h1 class="Reserveren-titel">Reserveren</h1>
+    <h1 class="Reserveren-titel">Wijzig Reservering</h1>
 
     </div>
 
@@ -52,65 +53,49 @@ session_start();
             unset($_SESSION['message']);
             ?>
         <?php endif; ?>
-        <form action="<?= URLROOT ?>reserveren/store/" method="post">
+        <form action="<?= URLROOT ?>/AdminOverzicht/updateSave/<?= $data->Id  ?>" method="post">
             <div class="form-group">
                 <label for="aantal_personen">Aantal personen:</label>
-                <input type="number" id="aantal_personen" name="aantal_personen" min="1" max="50" required>
+                <input type="number" id="aantal_personen" name="aantal_personen" min="1" max="50" required value="<?= $data->aantal_personen ?>">
             </div>
             <div class="form-group">
                 <label for="datum">Datum:</label>
-                <input type="date" id="datum" name="datum" required>
+                <input type="date" id="datum" name="datum" required value="<?= $data->datum ?>">
             </div>
             <div class="form-group">
                 <label for="tijd">Tijd:</label>
-                <select id="tijd" name="tijd" required>
-
-                    <option value="17:00">17:00</option>
-                    <option value="18:00">18:00</option>
-                    <option value="19:00">19:00</option>
-                    <option value="20:00">20:00</option>
-                    <option value="21:00">21:00</option>
-                    <option value="22:00">22:00</option>
-                </select>
+                <input type="time" id="tijd" name="tijd" required value="<?= $data->tijd ?>">
             </div>
             <div class="form-group">
                 <label for="tafel">Tafel:</label>
-                <select id="tafel" name="tafel" required>
-                    <option value="Tafel 1">Tafel 1</option>
-                    <option value="Tafel 2">Tafel 2</option>
-                    <option value="Tafel 3">Tafel 3</option>
-                    <option value="Tafel 4">Tafel 4</option>
-                    <option value="Tafel 5">Tafel 5</option>
-                    <option value="Tafel 6">Tafel 6</option>
-                    <option value="Tafel 7">Tafel 7</option>
-                    <option value="Tafel 8">Tafel 8</option>
-                    <option value="Tafel 9">Tafel 9</option>
-                    <option value="Tafel 10">Tafel 10</option>
-
-
-
+                <select id="tafel" name="tafel" required value="<?= $data->tafel ?>">
+                    <option value="Tafel 1" selected>Tafel 1</option>
+                    <option value="Tafel 2" selected>Tafel 2</option>
+                    <option value="Tafel 3" selected>Tafel 3</option>
+                    <option value="Tafel 4" selected>Tafel 4</option>
                 </select>
             </div>
             <div class="form-group">
-                <input type="number" id="id" name="id" min="1" max="50" hidden>
+                <input type="number" id="id" name="id" min="1" max="50" hidden value="<?= $data->Id ?>">
             </div>
             <div class="form-group">
                 <label for="voornaam">Voornaam:</label>
-                <input type="text" id="voornaam" name="voornaam" min="1" max="50" required>
+                <input type="text" id="voornaam" name="voornaam" min="1" max="50" required value="<?= $data->voornaam ?>" disabled>
             </div>
             <div class="form-group">
                 <label for="achternaam">Achternaam:</label>
-                <input type="text" id="achternaam" name="achternaam" min="1" max="50" required>
+                <input type="text" id="achternaam" name="achternaam" min="1" max="50" required value="<?= $data->achternaam ?>" disabled>
             </div>
             <div class="form-group">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" min="1" max="50" required>
+                <input type="email" id="email" name="email" min="1" max="50" required value="<?= $data->email ?>" disabled>
             </div>
             <div class="form-group">
                 <label for="tel">Telefoonnummer:</label>
-                <input type="number" id="tel" name="tel" required>
+                <input type="number" id="tel" name="tel" required value="<?= $data->telefoon_nummer ?>" disabled>
             </div>
-            <button type="submit" name="submit">Reserveren</button>
+            <button type="submit" name="submit">Opslaan</button>
+
         </form>
     </div>
     <?php $this->utils('footer', []); ?>

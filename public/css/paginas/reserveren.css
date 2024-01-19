@@ -6,10 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
+  height: 5rem;
 }
 
 .container {
@@ -34,7 +31,10 @@ label {
 
 input[type=number],
 input[type=date],
-input[type=time] {
+input[type=time],
+input[type=text],
+input[type=email],
+input[type=voornaam] {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
